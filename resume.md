@@ -1,12 +1,12 @@
-# 조영진 (YoungJin Cho) - Mobile / Android Engineer, 9 yrs
+# 조영진 / Android SDK · App Engineer
 
-> 200+ 기업 · 1,000만+ 사용자 SDK 메인 / 50만 DL B2C 앱 개발 및 운영 / AI 프로젝트 3건 - 9년차 Android 엔지니어
+> 200+ 기업 · 1,000만+ 사용자 SDK 메인 / 50만 DL B2C 앱 개발 및 운영 / AI 프로젝트 3건
 
 ---
 
 | | |
 |---|---|
-| **포지션** | Mobile / Android Engineer |
+| **포지션** | Android SDK · App Engineer |
 | **직책** | 책임연구원 (AI 연구 2팀) |
 | **소속** | 라온시큐어 (RaonSecure), 2018.04 ~ 현재 (9년차) |
 | **이메일** | youngjin317@naver.com |
