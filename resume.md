@@ -1,4 +1,4 @@
-# 조영진 / Android SDK · App Engineer
+# 조영진 / Android SDK · Platform Engineer
 
 > 200+ 기업 · 1,000만+ 사용자 SDK 메인 / 50만 DL B2C 앱 개발 및 운영 / AI 프로젝트 3건
 
@@ -6,7 +6,7 @@
 
 | | |
 |---|---|
-| **포지션** | Android SDK · App Engineer |
+| **포지션** | Android SDK · Platform Engineer |
 | **직책** | 책임연구원 (AI 연구 2팀) |
 | **소속** | 라온시큐어 (RaonSecure), 2018.04 ~ 현재 (9년차) |
 | **병역** | 군필 (육군 병장 만기전역, 2013.02 ~ 2014.11) |
@@ -16,7 +16,7 @@
 
 ## Summary
 
-라온시큐어 9년차 Android 엔지니어. 200+ 금융/공공 기업의 앱에 탑재되어 1,000만+ 사용자에게 제공되는 Android/iOS SDK의 메인 개발자로, Public API 설계부터 하위 호환성, NDK 네이티브 레이어, OEM 호환성까지 SDK의 설계와 개발 전반을 직접 다뤄왔다. 50만 다운로드 B2C 앱(라온 모바일 시큐리티)은 MVVM 전환·Jetpack 도입 같은 리팩토링부터 신규 기능 개발까지, 기술 의사결정과 개발을 함께 해왔다.
+라온시큐어 9년차 Android 엔지니어. 200+ 금융/공공 기업의 앱에 탑재되어 1,000만+ 사용자에게 제공되는 Android/iOS SDK의 메인 개발자로, Public API 설계부터 하위 호환성, NDK 네이티브 레이어, OEM 호환성까지 SDK의 설계와 개발 전반을 다뤄왔다. 50만 다운로드 B2C 앱(라온 모바일 시큐리티)은 MVVM 전환·Jetpack 도입 같은 리팩토링부터 신규 기능 개발까지, 기술 의사결정과 개발을 함께 해왔다.
 
 최근 2년은 AI 프로젝트 3건을 리드하고 있다. 딥페이크 탐지는 앱에 탑재해 서비스 출시했고, 보이스피싱 탐지는 ML 모델을 연구·개발했으며, 악성앱 탐지는 ML 모델부터 MLOps까지 개발 진행 중이다. 현재는 KISA 과제로 온디바이스 딥페이크 탐지 SDK 개발과 모델 경량화 연구를 진행하고 있다.
 
@@ -28,16 +28,16 @@
 Android SDK · NDK / JNI · C++ · AIDL / IPC · 멀티모듈(Multi-module) · Public API 설계 · 하위 호환성 · DX(개발자 경험) · AAR · OEM 호환성 · Reflection · ProGuard / R8
 
 **Android App Engineering**
-Kotlin · Jetpack Compose · Coroutines · Flow · Hilt · Java · Room · Navigation · Paging · DataStore · WorkManager · Lifecycle · Retrofit2 · OkHttp3 · MVVM · Clean Architecture
+Kotlin · Jetpack Compose · Coroutines · Flow · Hilt · Java · Room · WorkManager · Retrofit2 · MVVM · Clean Architecture
 
 **AI / ML**
-온디바이스 · TFLite · PyTorch · ML Kit · 양자화 · 지식증류 · BERT(KoBERT) · MLOps · MLflow · FastAPI · Docker · Python
+온디바이스 · TFLite · PyTorch · ML Kit · 양자화 · 지식증류 · MLOps · MLflow · FastAPI · Docker · Python
 
 **iOS**
 iOS SDK · Swift · Objective-C
 
 **CI/CD · Tools**
-JUnit · Jenkins · GitHub Actions · Firebase Crashlytics · Firebase Analytics · AdMob · Git
+JUnit · Jenkins · GitHub Actions · Firebase Crashlytics · Firebase Analytics
 
 ---
 
@@ -45,8 +45,8 @@ JUnit · Jenkins · GitHub Actions · Firebase Crashlytics · Firebase Analytics
 
 **라온시큐어** · AI 연구 2팀 · 책임연구원 · 2018.04 ~ 현재 (9년차)
 
-- AI 악성앱 탐지 - 전체/모델 개발 리드 (2026.02 ~ 현재)
-- AI 보이스피싱 탐지 - 전체/모델 개발 리드, 3인 팀 (2025.09 ~ 2025.12)
+- AI 악성앱 탐지 - 개발 리드 (모델 포함) (2026.02 ~ 현재)
+- AI 보이스피싱 탐지 - 개발 리드 (모델 포함), 3인 팀 (2025.09 ~ 2025.12)
 - 클라우드 서비스 전환 - 앱 개발 리드, 5인 팀 (2025.02 ~ 2025.10)
 - AI 딥페이크 탐지 - 앱 개발 리드 / 모델 서브, 6인 팀 (2024.04 ~ 2024.12)
 - 라온 모바일 시큐리티 (B2C 앱) - 개발 및 운영 (2021.07 ~ 현재)
@@ -64,8 +64,14 @@ JUnit · Jenkins · GitHub Actions · Firebase Crashlytics · Firebase Analytics
 - **역할:** 메인 개발자 (Android/iOS SDK, App)
 - **기간:** 2019.04 ~ 현재
 - **기술 스택:** Android SDK · NDK · iOS SDK · Kotlin · Coroutines · Java · C++ · Objective-C · Swift · MVVM · Clean Architecture · Multi-module · AAR · WorkManager · ProGuard / R8 · JUnit · Firebase Crashlytics · Firebase Analytics · Jenkins
-- **개요:** 금융/공공 200+ 기업의 앱에 탑재되는 Android/iOS SDK. 1,000만+ 사용자 서비스에 탑재된 SDK로, 악성앱, 루팅, 디버깅, 통신 위변조 탐지가 핵심 기능. Public API 설계부터 NDK 네이티브 레이어, OEM 호환성까지 SDK의 설계, 개발, 운영을 담당.
-- **핵심 성과:** Public API 설계·운영(호스트 앱 코드 수정 0건 원칙, 연동 가이드·마이그레이션 문서 기반 DX(개발자 경험) 운영), 멀티모듈(core/detection/ui) 분리 + Java→Kotlin 마이그레이션, SDK 사이즈 최적화(통합→분할 다운로드, 패턴/엔진 파일 분리), 비즈니스 모델 전환(클라우드 전환 프로젝트, 앱 개발 리드 5인 팀, 2025.02~2025.10 - 라이선스 기반 → 사용량 과금, 로컬 DB 제약 제거로 탐지 패턴 DB 5배+ 확장, CDN 대비 서버 비용 절감), 200+ 고객사 OEM 호환성 대응(Android 5~16 메이저 12개 버전, 삼성·LG·샤오미·Pixel, Reflection 기반 호환성 레이어), AIDL/IPC·WorkManager·Coroutines 기반 비동기 처리 + JNI 메모리 릭 해결, JUnit + Jenkins CI/CD + Firebase 기반 품질 체계 + KISA 백신 인증 획득, iOS 탈옥/원격/디버깅 탐지 모듈 개발.
+- **개요:** 금융/공공 200+ 기업의 앱에 탑재되어 1,000만+ 사용자에게 제공되는 Android/iOS SDK. 악성앱·루팅·디버깅·통신 위변조 탐지가 핵심 기능. Public API 설계부터 NDK 네이티브 레이어, OEM 호환성까지 SDK의 설계·개발·운영을 담당.
+- **핵심 성과:**
+    - Public API 설계·운영 — 호스트 앱 코드 수정 0건 원칙, 연동 가이드·마이그레이션 문서 기반 DX
+    - 200+ 고객사 OEM 호환성 — Android 5~16(메이저 12개 버전), 삼성·LG·샤오미·Pixel, Reflection 기반 호환성 레이어(고객사 OEM 분기 코드 불필요)
+    - 멀티모듈(core/detection/ui) 분리 + Java→Kotlin 마이그레이션(Public API 하위 호환 유지), SDK 사이즈 최적화(통합→분할 다운로드)
+    - 비즈니스 모델 전환(클라우드 전환, 앱 개발 리드 5인, 2025.02~2025.10) — 라이선스 → 사용량 과금, 로컬 DB 제약 제거로 탐지 패턴 DB 5배+ 확장
+    - AIDL/IPC·WorkManager·Coroutines 비동기 처리 + JNI 메모리 릭 해결, JUnit + Jenkins CI/CD + Firebase 품질 체계, KISA 백신 인증
+    - iOS 탈옥·원격·디버깅 탐지 모듈 개발
 
 관련 링크: https://play.google.com/store/apps/details?id=com.TouchEn.mVaccine.webs
 
@@ -77,7 +83,12 @@ JUnit · Jenkins · GitHub Actions · Firebase Crashlytics · Firebase Analytics
 - **기간:** 2021.07 ~ 현재
 - **기술 스택:** Kotlin · Coroutines · Flow · Room · Hilt · MVVM · Lifecycle · Navigation · Paging · DataStore · Retrofit2 · OkHttp3 · Firebase Crashlytics · Firebase Analytics
 - **개요:** 50만 다운로드, 평점 4.5의 B2C 앱. 악성앱, 스미싱, 딥페이크 등 10가지 이상 보안 기능을 하나의 앱에 모았다. MVVM 전환·Jetpack 도입 같은 리팩토링부터 신규 기능 개발까지, 기술 의사결정과 개발을 함께 해왔다.
-- **핵심 성과:** 스레드/RxJava → MVVM + Coroutines + Flow + Hilt 기반으로 설계·전환(보일러플레이트 제거, 유지보수·테스트 적합 구조 정비), Jetpack 스택(Room, Navigation, Paging, DataStore) 점진 마이그레이션 완료 + Compose 도입 진행, mVaccine SDK 모듈화 구조 활용해 10가지+ 보안 기능 단일 앱 통합, 딥페이크 탐지 AI 직접 탑재·서비스 제공, 50만 다운로드 / 1,000명+ 평가 / 평점 4.5 운영, Firebase 기반 운영 지표 모니터링 + Play Store 정기 릴리즈·사용자 피드백 기반 개선 사이클 운영.
+- **핵심 성과:**
+    - 50만 다운로드 / 1,000명+ 평가 / 평점 4.5 운영
+    - 스레드/RxJava → MVVM + Coroutines + Flow + Hilt 전환(보일러플레이트 제거, 테스트 적합 구조)
+    - Jetpack 스택(Room·Navigation·Paging·DataStore) 점진 마이그레이션 + Compose 도입
+    - mVaccine SDK 모듈화 구조 활용해 10가지+ 보안 기능 단일 앱 통합, 딥페이크 탐지 AI 탑재·서비스
+    - Firebase 운영 지표 모니터링 + Play Store 정기 릴리즈·피드백 개선 사이클
 
 관련 링크: https://play.google.com/store/apps/details?id=com.raonsecure.mobile.security
 
@@ -87,29 +98,42 @@ JUnit · Jenkins · GitHub Actions · Firebase Crashlytics · Firebase Analytics
 - **소속:** 라온시큐어
 - **역할:** 앱 개발 리드 / 모델 개발 서브 (6인 팀)
 - **기간:** 2024.04 ~ 2024.12
-- **기술 스택:** Android SDK · Kotlin · Python · PyTorch · TFLite · i3d · ResNet
+- **기술 스택:** Android SDK · Kotlin · Python · PyTorch · TFLite · I3D · ResNet
 - **개요:** 영상 속 딥페이크를 AI로 탐지하는 기능을 라온 모바일 시큐리티 앱에 탑재. 오픈소스 모델을 자체 데이터셋으로 튜닝하고, 온디바이스 vs 클라우드 아키텍처 의사결정 후 출시.
-- **핵심 성과:** 자체 데이터셋 구축·튜닝으로 동양인 탐지 정확도 65% → 95%(+30%p), TFLite 양자화 + 온디바이스 PoC 측정(MediaProjection 720p/30fps 미달, 추론 latency 실시간 임계 초과) → 측정 데이터 기반 클라우드 비동기 아키텍처로 전환·출시, 영상 업로드 + 유튜브/SNS URL 입력 UX + 실시간 탐지 현황·랭킹 UI/UX 구현, 50만 다운로드 B2C 앱 탑재 및 실서비스 출시, 후속 KISA 과제(온디바이스 딥페이크 탐지 SDK)에서 SDK 설계·개발 메인 / 모델 경량화(양자화, 지식증류) 연구 서브 진행 중.
+- **핵심 성과:**
+    - 자체 데이터셋 구축·튜닝으로 동양인 탐지 정확도 65% → 95%(+30%p)
+    - TFLite 양자화 + 온디바이스 PoC 측정(720p/30fps 미달, 추론 latency 실시간 임계 초과) → 측정 데이터 기반 클라우드 비동기 아키텍처 전환·출시
+    - 영상 업로드 + 유튜브/SNS URL 입력 UX + 실시간 탐지 현황·랭킹 UI/UX 구현
+    - 50만 다운로드 B2C 앱 탑재 및 실서비스 출시
+    - 후속 KISA 과제(온디바이스 딥페이크 SDK) — SDK 설계·개발 메인 / 모델 경량화(양자화·지식증류) 연구 서브
 
 
 #### 4. AI 보이스피싱 탐지 - Recall 99.34% / FP 22% 출시 보류 판단
 
 - **소속:** 라온시큐어
-- **역할:** 전체/모델 개발 리드 (3인 팀)
+- **역할:** 개발 리드 (모델 포함, 3인 팀)
 - **기간:** 2025.09 ~ 2025.12
 - **기술 스택:** KoBERT · 경량 LLM · Python · NLP
 - **개요:** 보이스피싱 통화를 AI로 실시간 탐지하는 프로젝트. KoBERT + 경량 LLM 기반 파이프라인을 3인 팀 리드로 구축.
-- **핵심 성과:** KoBERT + 경량 LLM 실시간 탐지 파이프라인 구축, 3인 팀 기획부터 프로토타입까지 전체 리드, 데이터 부족 대응으로 정상 통화 + 보이스피싱 시나리오 + 경계선 사례 합성 보강, Recall 99.34%(데이터 불균형 기반 과적합 시그널) + FP Rate 22%(정상 통화 5건 중 1건 오탐, 사용자 신뢰 훼손 수준) 분석 → 팀·상위 보고 후 합의 거쳐 출시 보류 결정, 후속 전략으로 Hard Negative Mining 기반 재학습 + 정상 대화/합성 데이터 보강 방안 제안.
+- **핵심 성과:**
+    - KoBERT + 경량 LLM 실시간 탐지 파이프라인 구축, 3인 팀 전체 리드(기획~프로토타입)
+    - 데이터 부족 대응 — 정상 통화 + 보이스피싱 시나리오 + 경계선 사례 합성 보강
+    - Recall 99.34%(데이터 불균형 과적합 시그널) + FP 22%(정상 5건 중 1건 오탐) 분석 → 합의 거쳐 출시 보류
+    - 후속: Hard Negative Mining 재학습 + 정상 대화/합성 데이터 보강 제안
 
 
 #### 5. AI 악성앱 탐지 - 시그니처 기반 한계 해결
 
 - **소속:** 라온시큐어
-- **역할:** 전체/모델 개발 리드
+- **역할:** 개발 리드 (모델 포함)
 - **기간:** 2026.02 ~ 현재
 - **기술 스택:** Python · PyTorch · MLflow · Docker · MLOps · Android
-- **개요:** ML 모델 기반 악성앱 탐지 시스템 구축 중. 시그니처 기반 한계(제로데이 대응)를 ML로 해결하는 장기 프로젝트.
-- **핵심 성과:** 4단계 장기 계획 수립(탐지 시스템 구축 → ML 학습 파이프라인 → 클라우드 실시간 탐지 → 온디바이스 탐지), Tesseract 논문 기반 실용 가능한 ML 악성앱 탐지 시스템 설계, 핵심 문제 정의(기간/버전에 따라 정상↔악성 분류 변동) → 기간별 데이터셋 별도 학습 방식 채택, 난독화 대응으로 GNN 기반 모델 적용·학습 진행 중, MLOps 환경 선제 구축(MLflow 실험 추적 + 모델 레지스트리, FastAPI 서빙, GitHub Actions CI/CD, Docker 학습 환경).
+- **개요:** ML 기반 악성앱 탐지 시스템 구축 중. 시그니처만으로는 놓치는 변종·제로데이를 다루기 위해 ML 기반 탐지 구조를 설계하는 장기 프로젝트.
+- **핵심 성과:**
+    - 4단계 장기 계획(탐지 시스템 → ML 학습 파이프라인 → 클라우드 실시간 → 온디바이스)
+    - Tesseract 논문 기반 설계 — 기간/버전에 따라 정상↔악성이 역전되는 특성 → 기간별 데이터셋 분리 학습
+    - 난독화 대응 GNN 기반 모델 적용·학습 중
+    - MLOps 선제 구축(MLflow·FastAPI·GitHub Actions·Docker)
 
 ---
 
@@ -143,7 +167,7 @@ JUnit · Jenkins · GitHub Actions · Firebase Crashlytics · Firebase Analytics
 *1인 기획·설계·배포, Google Play 운영 중*
 
 - **기술 스택:** Kotlin · Coroutines · Jetpack Compose · MVVM · ML Kit · AdMob
-- **개요:** 사진첩의 셀카를 ML Kit Face Detection으로 분석해 유사 셀카 자동 그룹핑/베스트샷 추천하는 Android 앱. 1인 기획/설계 + Compose + 멀티모듈 구조 풀스택 구현, Google Play 배포/운영 중.
+- **개요:** 사진첩의 셀카를 ML Kit Face Detection으로 분석해 유사 셀카 자동 그룹핑/베스트샷 추천하는 Android 앱. 1인 기획·설계·개발 + Compose + 멀티모듈 구조, Google Play 배포·운영 중.
 
 - ML Kit Face Detection 기반 유사도 점수 산출 알고리즘 설계. 사진첩에서 유사 셀카 자동 그룹핑 후 베스트샷 추천.
 - 유사도 임계값 조정에 따른 정확도-오탐률 트레이드오프를 직접 측정 및 튜닝.
@@ -162,26 +186,26 @@ JUnit · Jenkins · GitHub Actions · Firebase Crashlytics · Firebase Analytics
 - [GitHub](https://github.com/yjcho9317/nworks) / [npm](https://www.npmjs.com/package/nworks)
 
 
-#### 3. aiignore-cli - AI 코딩 도구 보안 가드레일
+#### 3. aiignore-cli - AI 코딩 도구 ignore 자동화
 *1인 설계·개발, 오픈소스*
 
 - **기술 스택:** TypeScript · npm · GitHub Actions
 - **개요:** AI 코딩 도구(Cursor, Claude Code 등)에 민감 정보가 노출되지 않도록 ignore 파일을 자동 생성하는 CLI. 바이브 코딩 시 private key 등 시크릿이 AI 컨텍스트로 유입되는 보안 리스크에 대응.
 
-- 주요 AI 코딩 도구의 ignore 파일을 .gitignore처럼 자동 생성한다. 단일 명령으로 다양한 도구의 보안 설정을 일괄 처리.
+- 주요 AI 코딩 도구의 ignore 파일을 .gitignore처럼 자동 생성한다. 단일 명령으로 여러 도구의 ignore 설정을 일괄 처리.
 - 바이브 코딩 시 AI 컨텍스트로 시크릿이 유입되는 보안 리스크에 대응해 만든 도구. AI 시스템 자체를 안전하게 만드는 가드레일 쪽 관심사다. npm publish.
 - [GitHub](https://github.com/yjcho9317/aiignore-cli) / [npm](https://www.npmjs.com/package/aiignore-cli)
 
 
-#### 4. mcp-fence - MCP 프로토콜 보안 방화벽
+#### 4. mcp-fence - MCP 프로토콜 보호 프록시
 *1인 설계·개발, 오픈소스*
 
 - **기술 스택:** TypeScript · MCP · npm · GitHub Actions
-- **개요:** nworks(MCP 서버)를 개발하며 발견한 MCP 프로토콜 보안 문제(탐지 도구 부재)를 해결하기 위해 직접 만든 양방향 보안 프록시. 프롬프트 인젝션, 시크릿 유출, 도구 변조를 탐지.
+- **개요:** nworks(MCP 서버)를 개발하며 확인한 MCP 도구 호출 보호 필요성에서 출발해 만든 양방향 프록시. 프롬프트 인젝션, 시크릿 유출, 도구 변조를 탐지.
 
 - 양방향 스캐닝, SHA-256 기반 도구 설명 해시 피닝, 정책 엔진(allow/deny + 인자 검증), SQLite 감사 로그로 탐지 엔진 구성.
 - 56개 탐지 패턴, 1,426개 테스트, 자체 측정 86% 탐지율. OWASP MCP Top 10 중 9개 항목 커버.
-- nworks를 만들면서 발견한 MCP 프로토콜 보안 문제(탐지 도구 부재)에서 출발해 양방향 보안 프록시로 발전시킨 도구. AI 시스템 자체를 안전하게 만드는 가드레일 쪽 관심사다. npm publish.
+- nworks를 만들며 확인한 도구 호출 보호 필요성에서 출발해 양방향 보호 프록시로 발전시킨 도구. AI 시스템을 안전하게 만드는 가드레일 쪽 관심사다. npm publish.
 - [GitHub](https://github.com/yjcho9317/mcp-fence) / [npm](https://www.npmjs.com/package/mcp-fence)
 
 ---
