@@ -1,43 +1,43 @@
 # 조영진 / Android SDK · Platform Engineer
 
-> 200+ 기업 · 1,000만+ 사용자 SDK 메인 / 50만 DL B2C 앱 개발 및 운영 / AI 프로젝트 3건
-
----
+> 200+ 기업 · 1,000만+ 사용자 모바일 SDK 메인 / 50만+ 다운로드 B2C 앱 개발·운영 / AI 프로젝트 3건 · 온디바이스 AI 적용·배포 경험
 
 | | |
 |---|---|
 | **포지션** | Android SDK · Platform Engineer |
 | **직책** | 책임연구원 (AI 연구 2팀) |
 | **소속** | 라온시큐어 (RaonSecure), 2018.04 ~ 현재 (9년차) |
-| **병역** | 군필 (육군 병장 만기전역, 2013.02 ~ 2014.11) |
 | **포트폴리오** | https://yjcho9317.github.io/android-portfolio |
 | **GitHub** | https://github.com/yjcho9317 |
 | **블로그** | https://velog.io/@yjcho9317 / https://yjcho9317.tistory.com |
+| **병역** | 군필 (육군 병장 만기전역, 2013.02 ~ 2014.11) |
+
+---
 
 ## Summary
 
-라온시큐어 9년차 Android 엔지니어. 200+ 금융/공공 기업의 앱에 탑재되어 1,000만+ 사용자에게 제공되는 Android/iOS SDK의 메인 개발자로, Public API 설계부터 하위 호환성, NDK 네이티브 레이어, OEM 호환성까지 SDK의 설계와 개발 전반을 다뤘다. B2C 쪽에서는 50만 다운로드 앱 '라온 모바일 시큐리티'를 MVVM 전환·Jetpack 도입 같은 리팩토링부터 신규 기능까지 개발과 운영을 함께 했다.
+9년차 Android SDK · Platform Engineer. 금융·공공 200+ 기업 앱, 1,000만+ 사용자 서비스에 탑재되는 Android/iOS 보안 SDK의 메인 개발자로 Public API, 하위 호환성, NDK/JNI, OEM 호환성, 멀티모듈, 품질·배포 체계를 설계하고 운영했다. B2C에서는 50만+ 다운로드 앱의 구조 개선부터 신규 기능, Play Store 운영까지 담당했다.
 
-최근 2~3년은 이 기반 위에서 3가지 AI 프로젝트(딥페이크·보이스피싱·악성앱)를 직접 개발했다. 딥페이크 탐지는 앱에 탑재해 서비스 출시했고, 보이스피싱 탐지는 통화 음성을 실시간 분석하는 ML 모델을 연구·개발했으며, 악성앱 탐지는 모델 개발부터 MLOps 구축까지 다뤘다. KISA 3사 공동 과제에서는 AI 모델을 연동하는 온디바이스 딥페이크 탐지 SDK를 메인으로 설계·개발했다.
+최근 2~3년은 이 모바일·플랫폼 경험을 AI 적용·배포 영역으로 확장했다. 딥페이크 탐지 모델을 실제 Android 서비스에 적용하고, 온디바이스 제약을 실기기에서 검증해 아키텍처를 결정했으며, 후속 KISA 과제에서는 Android/iOS 온디바이스 AI SDK의 설계·개발을 메인으로 담당하고 있다. 보이스피싱·악성앱 탐지 모델 연구와 AI 에이전트 실운영도 경험했다.
 
 ---
 
 ## 기술 스택
 
-**SDK / Platform Engineering**
-Android SDK · NDK / JNI · C++ · AIDL / IPC · 멀티모듈(Multi-module) · Public API 설계 · 하위 호환성 · DX(개발자 경험) · AAR · OEM 호환성 · Reflection · ProGuard / R8
+**Android SDK · Platform**  
+Android SDK · Kotlin · Java · NDK/JNI · C/C++ · AIDL/IPC · Public API · 하위 호환성 · Multi-module · OEM 호환성 · AAR · ProGuard/R8
 
-**Android App Engineering**
-Kotlin · Jetpack Compose · Coroutines · Flow · Hilt · Java · Room · WorkManager · Retrofit2 · MVVM · Clean Architecture
+**Android Application**  
+Coroutines · Flow · Jetpack Compose · Hilt · Room · WorkManager · Navigation · Paging · DataStore · Retrofit · MVVM · Clean Architecture
 
-**AI / ML**
-온디바이스 · ONNX Runtime · TFLite · PyTorch · ML Kit · 양자화 · 지식증류 · MLOps · MLflow · FastAPI · Docker · Python
+**AI Application · Deployment**  
+ONNX Runtime · TFLite · NNAPI · CoreML · PyTorch · ML Kit · 양자화 · 지식증류 · 모델 경량화 · MLflow · FastAPI · Docker · Python
 
-**iOS**
-iOS SDK · Swift · Objective-C
+**Quality · Delivery**  
+JUnit · GoogleTest · Jenkins · GitHub Actions · Firebase Crashlytics · Firebase Analytics · 성능/회귀 테스트 · 배포 자동화
 
-**CI/CD · Tools**
-JUnit · Jenkins · GitHub Actions · Firebase Crashlytics · Firebase Analytics
+**Cross-platform**  
+iOS SDK · Swift · Objective-C · C++ shared core
 
 ---
 
@@ -45,115 +45,80 @@ JUnit · Jenkins · GitHub Actions · Firebase Crashlytics · Firebase Analytics
 
 **라온시큐어** · AI 연구 2팀 · 책임연구원 · 2018.04 ~ 현재 (9년차)
 
-- 온디바이스 딥페이크 탐지 SDK (KISA 과제) - SDK 설계·개발 메인 / 모델 경량화 서브 (2026.04 ~ 현재)
-- AI 악성앱 탐지 - 개발 리드 (모델 포함) (2026.02 ~ 현재)
-- AI 보이스피싱 탐지 - 개발 리드 (모델 포함), 3인 팀 (2025.09 ~ 2025.12)
-- 클라우드 서비스 전환 - 앱 개발 리드, 5인 팀 (2025.02 ~ 2025.10)
-- AI 딥페이크 탐지 - 앱 개발 리드 / 모델 서브, 6인 팀 (2024.04 ~ 2024.12)
-- 라온 모바일 시큐리티 (B2C 앱) - 개발 및 운영 (2021.07 ~ 현재)
-- TouchEn mVaccine SDK (Android/iOS) - 메인 개발자 (2019.04 ~ 현재)
-- TouchEn nxKey (macOS) - 개발 (2019.04 ~ 2021.09)
-- TouchEn Transkey / mTranskey (Web SDK) - 개발 및 운영 (2018.10 ~ 2021.07)
+- KISA 온디바이스 딥페이크 탐지 SDK 과제 — SDK 설계·개발 메인 (2026.04 ~ 현재)
+- AI 악성앱 탐지 — 개발 리드 (2026.02 ~ 현재)
+- 클라우드 서비스 전환 — 앱 개발 리드 (2025.02 ~ 2025.10)
+- AI 딥페이크 탐지 — 앱 개발 리드 (2024.04 ~ 2024.12)
+- 라온 모바일 시큐리티 — Android 앱 개발 및 운영 (2021.07 ~ 현재)
+- TouchEn mVaccine — Android/iOS SDK 메인 개발자 (2019.04 ~ 현재)
+- TouchEn nxKey — macOS App 개발 (2019.04 ~ 2021.09)
+- TouchEn Transkey / mTranskey — Web SDK 개발 및 운영 (2018.10 ~ 2021.07)
 
 ---
 
 ## 메인 프로젝트
 
-#### 1. TouchEn mVaccine SDK / APP - 메인 개발자
+#### 1. TouchEn mVaccine SDK / APP
 
 - **소속:** 라온시큐어
 - **역할:** 메인 개발자 (Android/iOS SDK, App)
 - **기간:** 2019.04 ~ 현재
-- **기술 스택:** Android SDK · NDK · iOS SDK · Kotlin · Coroutines · Java · C++ · Objective-C · Swift · Clean Architecture · Multi-module · AAR · WorkManager · ProGuard / R8 · JUnit · Firebase Crashlytics · Firebase Analytics · Jenkins
-- **개요:** 금융/공공 200+ 기업의 앱에 탑재되어 1,000만+ 사용자에게 제공되는 Android/iOS SDK. 악성앱·루팅·디버깅·통신 위변조 탐지가 핵심 기능. Public API 설계부터 NDK 네이티브 레이어, OEM 호환성까지 SDK의 설계·개발·운영을 담당.
-- **핵심 성과:**
-    - Public API 설계·운영 — 호스트 앱 코드 수정 0건 원칙, 연동 가이드·마이그레이션 문서 기반 DX
-    - 200+ 고객사 OEM 호환성 — Android 5~16(메이저 12개 버전), 삼성·LG·샤오미·Pixel, Reflection 기반 호환성 레이어(고객사 OEM 분기 코드 불필요)
-    - 멀티모듈(core/detection/ui) 분리 + Java→Kotlin 마이그레이션(Public API 하위 호환 유지), SDK 사이즈 최적화(통합→분할 다운로드, 재시도·무결성 검증·중복 실행 방지)
-    - 비즈니스 모델 전환(클라우드 전환, 앱 개발 리드 5인, 2025.02~2025.10) — 라이선스 → 사용량 과금, 로컬 DB 제약 제거로 탐지 패턴 DB 5배+ 확장
-    - AIDL/IPC·WorkManager·Coroutines 비동기 처리(취소·예외 전파, 네이티브 작업 생명주기 정리) + JNI 메모리 릭 해결, JUnit + Jenkins CI/CD + Firebase 품질 체계, KISA 백신 성능 평가 대응으로 인증 획득
-    - iOS 탈옥·원격·디버깅 탐지 모듈 개발
+- **기술 스택:** Android SDK · Kotlin · Java · NDK/JNI · C++ · AIDL/IPC · Coroutines · WorkManager · Multi-module · AAR · ProGuard/R8 · JUnit · Jenkins · Firebase Crashlytics · Firebase Analytics · Objective-C · Swift
+- **개요:** 금융/공공 200+ 기업, 1,000만+ 사용자 서비스에 탑재되는 모바일 보안 SDK의 Public API부터 NDK/JNI·OEM 호환성까지 설계·개발·운영.
+- **성과:**
+  - Android 5~16(메이저 12개 버전)·삼성/LG/샤오미/Pixel OEM 호환성(Reflection 기반 호환성 레이어)
+  - 멀티모듈화·Java→Kotlin 전환
+  - WorkManager/Coroutines 비동기 처리
+  - JNI 메모리 릭 해결
+  - JUnit/Jenkins/Firebase 품질 체계를 구축·운영.
+  - 업데이트 분할 다운로드 전환(데이터 사용 경량화)
+  - AIDL/IPC 설계
+  - 연동 가이드·마이그레이션 문서 등 고객사 통합 DX 관리.
+  - 클라우드 전환(앱 개발 리드, 5인 팀) — 라이선스 → 사용량 과금 구조, 탐지 패턴 DB 5배+ 확장.
+  - KISA 백신 성능 평가 대응으로 인증 획득.
+  - iOS 탈옥·원격·디버깅 탐지 모듈 개발 및 Objective-C SDK 유지보수.
 
 관련 링크: https://play.google.com/store/apps/details?id=com.TouchEn.mVaccine.webs
 
-
-#### 2. 라온 모바일 시큐리티 (B2C 앱) - 개발 및 운영
+#### 2. 라온 모바일 시큐리티 (B2C 앱)
 
 - **소속:** 라온시큐어
-- **역할:** 개발 및 운영
+- **역할:** Android 앱 개발 및 운영
 - **기간:** 2021.07 ~ 현재
-- **기술 스택:** Kotlin · Coroutines · Flow · Room · Hilt · MVVM · Lifecycle · Navigation · Paging · DataStore · Retrofit2 · Firebase Crashlytics · Firebase Analytics
-- **개요:** 50만 다운로드, 평점 4.5의 B2C 앱. 악성앱, 스미싱, 딥페이크 등 10가지 이상 보안 기능을 하나의 앱에 모았다. MVVM 전환·Jetpack 도입 같은 리팩토링부터 신규 기능까지 개발과 운영을 함께 했다.
-- **핵심 성과:**
-    - 50만 다운로드 / 1,000명+ 평가 / 평점 4.5 운영
-    - 스레드/RxJava → MVVM + Coroutines + Flow + Hilt 전환(보일러플레이트 제거, 테스트 적합 구조)
-    - Jetpack 스택(Room·Navigation·Paging·DataStore) 점진 마이그레이션 + Compose 도입(신규 화면 단위)
-    - mVaccine SDK 모듈화 구조 활용해 10가지+ 보안 기능 단일 앱 통합, 딥페이크 탐지 AI 탑재·서비스
-    - Firebase 운영 지표 모니터링 + Play Store 정기 릴리즈·피드백 개선 사이클
+- **기술 스택:** Kotlin · Coroutines · Flow · Hilt · Room · Lifecycle · Navigation · Paging · DataStore · Retrofit · MVVM · Jetpack Compose · Firebase Crashlytics · Firebase Analytics
+- **개요:** 50만+ 다운로드, 1,000명+ 평가, 평점 4.5 B2C 보안 서비스 앱의 구조 개선·신규 기능 개발·운영 담당.
+- **성과:**
+  - Thread/RxJava → MVVM + Coroutines + Flow + Hilt 전환
+  - Jetpack 점진 도입
+  - Compose 단계별 적용(신규 화면부터)
+  - 10가지+ 보안 기능을 단일 앱에 통합하고 딥페이크 탐지 AI 기능을 실서비스에 적용
+  - Firebase 기반 품질·사용 지표 모니터링, Play Store 정기 릴리즈 및 사용자 피드백 반영
 
 관련 링크: https://play.google.com/store/apps/details?id=com.raonsecure.mobile.security
 
-
-#### 3. AI 딥페이크 탐지 - 앱 개발 리드
+#### 3. AI 딥페이크 탐지
 
 - **소속:** 라온시큐어
 - **역할:** 앱 개발 리드 / 모델 개발 서브 (6인 팀)
 - **기간:** 2024.04 ~ 2024.12
 - **기술 스택:** Android SDK · Kotlin · Python · PyTorch · TFLite · I3D · ResNet
-- **개요:** 영상 속 딥페이크를 AI로 탐지하는 기능을 라온 모바일 시큐리티 앱에 탑재. 오픈소스 모델을 자체 데이터셋으로 튜닝하고, 온디바이스 vs 클라우드 아키텍처 의사결정 후 출시.
-- **핵심 성과:**
-    - 50만 다운로드 B2C 앱에 딥페이크 탐지 서비스 출시 — 모델 튜닝부터 앱 탑재까지 직접 수행
-    - 자체 데이터셋 구축·튜닝으로 동양인 탐지 정확도 65% → 95%(내부 검증셋 기준, +30%p)
-    - TFLite 양자화 + 온디바이스 PoC 측정(720p/30fps 미달, 추론 지연 실시간 임계 초과) → 측정 데이터 기반 클라우드 비동기 아키텍처 전환·출시
-    - 영상 업로드 + 유튜브/SNS URL 입력 UX + 실시간 탐지 현황·랭킹 UI/UX 구현
-    - 후속 KISA 과제(온디바이스 딥페이크 탐지 SDK)로 확장, 아래 별도 프로젝트 참조
+- **개요:** 영상 속 딥페이크를 AI로 탐지하는 기능을 라온 모바일 시큐리티 앱에 적용한 프로젝트. 모델 튜닝부터 Android 통합, 온디바이스 PoC, 아키텍처 결정, 서비스 출시까지 참여.
+- **성과:**
+  - 자체 데이터셋 튜닝으로 동양인 탐지 정확도 65% → 95%(내부 검증셋) 개선, 50만+ 다운로드 앱에 서비스 출시.
+  - TFLite 양자화 및 실기기 PoC에서 프레임 캡처(720p·30fps 미달)·추론 지연 한계를 측정하고, 데이터에 근거해 온디바이스 대신 클라우드 비동기 아키텍처로 전환.
 
-
-#### 4. 온디바이스 딥페이크 탐지 SDK (KISA 과제) - SDK 개발 메인
+#### 4. KISA 온디바이스 딥페이크 탐지 SDK 과제
 
 - **소속:** 라온시큐어
-- **역할:** SDK 설계·개발 메인 / 모델 경량화 연구 서브
+- **역할:** SDK 설계·개발 메인 / 모델 경량화 연구 서브 (3사 협업 과제)
 - **기간:** 2026.04 ~ 현재
-- **기술 스택:** Android SDK · NDK / JNI · C++17 · Kotlin · Swift · ONNX Runtime · NNAPI / CoreML · CMake · GoogleTest
-- **개요:** 고객사 앱이 서버 없이 단말 안에서 딥페이크를 탐지하는 Android/iOS SDK. AI 딥페이크 탐지(2024)의 후속으로 3사가 공동 수행하는 KISA 과제이며, 이 중 SDK 개발과 딥페이크 탐지 모델을 라온시큐어가 담당한다. 모델팀이 SDK 코드를 수정하지 않고 모델을 교체할 수 있는 구조로 설계했다.
-- **핵심 성과:**
-    - 계층 분리 — Kotlin/Swift 인터페이스 · C++ 공유 코어 · 추론 백엔드(HAL) 3계층, Android/iOS가 동일한 C++ 탐지 로직 사용
-    - 모델 교체 구조 — 전처리·입출력·추론 백엔드 우선순위를 model_config.json에 정의, 모델팀은 3개 파일(모델·config·검증용 golden I/O)만 전달하면 SDK 코드 수정 없이 교체
-    - 추론 백엔드 선택 — NNAPI·CoreML 하드웨어 가속 우선 + XNNPACK(CPU) 폴백, 실기기 측정 근거로 다중 런타임(ONNX Runtime/TFLite/CoreML) 구조로 설계 확장
-    - 크로스플랫폼 정합 — 플랫폼별 얼굴 검출기(ML Kit/Vision) 차이로 점수가 달라지는 문제 확인, crop 기하 보정으로 모델팀 모델의 출력을 1e-5 이내 오차로 재현. 검출기는 자체 경량 MTCNN 공유 검출기로 통일하는 구조로 설계
-    - 성능 측정 — 추론 지연/FPS/메모리/콜드 스타트/배터리 측정 항목 정의, 모델·백엔드별 출력 회귀 테스트 셋 구성
-    - 모델 보호 — AES-256-GCM 암호화 배포 + 메모리 내 복호화(평문 파일 미저장), 서명 검증 + A/B 슬롯(실패 시 이전 모델 롤백) 기반 모델 OTA 무중단 교체
-    - 모델 경량화(서브) — 양자화·프루닝·지식증류로 온디바이스 제약(추론 지연·메모리)에 맞추는 실험 수행
-
-
-#### 5. AI 보이스피싱 탐지 - 개발 리드
-
-- **소속:** 라온시큐어
-- **역할:** 개발 리드 (모델 포함, 3인 팀)
-- **기간:** 2025.09 ~ 2025.12
-- **기술 스택:** KoBERT · 경량 LLM · STT · INT8 양자화 · 지식증류 · Python · NLP · Android
-- **개요:** 통화 음성을 STT로 변환한 텍스트 스트림을 KoBERT + 경량 LLM으로 실시간 추론해 보이스피싱을 탐지하는 프로젝트. 3인 팀을 리드했다.
-- **핵심 성과:**
-    - Recall 99.34%(데이터 불균형 과적합 시그널) + FP 22%(정상 5건 중 1건 오탐) 분석 → 합의 거쳐 출시 보류 판단
-    - 실시간 탐지 흐름 — 통화 음성 → STT 텍스트 스트림 → KoBERT/경량 LLM 추론. 3인 팀 전체 리드(기획~프로토타입)
-    - 온디바이스 경량화 — KoBERT INT8 양자화(모델 351MB → 89MB), Android 실기기 0.39s로 실시간 처리 확인(탐지율 손실 없음). 경량 LLM은 INT4 양자화와 지식증류 두 방식을 실험해 정확도-속도 비교
-    - 데이터 부족 대응 — 정상 통화 + 보이스피싱 시나리오 + 경계선 사례 합성 보강
-    - 후속: Hard Negative Mining 재학습 + 정상 대화/합성 데이터 보강 제안
-
-
-#### 6. AI 악성앱 탐지 - 개발 리드
-
-- **소속:** 라온시큐어
-- **역할:** 개발 리드 (모델 포함)
-- **기간:** 2026.02 ~ 현재
-- **기술 스택:** Python · PyTorch · MLflow · Docker · MLOps · Android
-- **개요:** 시그니처만으로는 놓치는 변종·제로데이를 다루기 위해 ML 기반 탐지 구조를 설계하는 장기 프로젝트.
-- **핵심 성과:**
-    - 1차 기준선 — 이미지 기반 탐지 모델(DexRay)을 자체 수집 13.4만 건으로 학습. 교차검증 F1 0.925, 별도 검증셋(holdout) F1 0.83~0.88 확인. 운영 threshold는 미확정
-    - 4단계 장기 계획(탐지 시스템 → ML 학습 파이프라인 → 클라우드 실시간 → 온디바이스)
-    - TESSERACT 논문 기반 설계 — 악성앱 생태계·라벨 판정이 시간에 따라 변해(정상↔악성 재분류 포함) 무작위 분할 평가가 미래 탐지 성능을 과대평가하는 문제 → 수집 시점 기준 학습·평가 분리
-    - 난독화 대응 — 코드 구조를 활용하는 GNN 계열 탐지 모델을 설계해 학습에 적용
-    - MLOps 기반 구성(MLflow 실험 추적·모델 레지스트리, FastAPI 서빙, GitHub Actions CI/CD, Docker)
+- **기술 스택:** Android SDK · NDK/JNI · C++ · Kotlin · Swift · ONNX Runtime · TFLite · NNAPI · CoreML · XNNPACK · CMake
+- **개요:** 서버 없이 Android/iOS 단말에서 딥페이크를 탐지하는 SDK. 3사 공동 KISA 과제로, 라온시큐어는 SDK 개발과 영상 탐지 모델을 담당. 서로 다른 플랫폼·하드웨어에서 동일한 모델 동작을 재현할 수 있도록 설계.
+- **성과:**
+  - Kotlin/Swift 인터페이스–C++ 공통 코어–추론 백엔드로 레이어를 분리한 Android/iOS 온디바이스 AI SDK 설계.
+  - config 기반으로 SDK 코드 수정 없이 모델을 교체할 수 있는 구조 설계.
+  - ONNX Runtime/TFLite와 NNAPI/CoreML/CPU fallback을 조합한 멀티 런타임 구조 및 플랫폼 간 출력 정합 검증.
+  - 성능·회귀 테스트와 모델 암호화·서명 검증·A/B 모델 OTA 구조 설계.
 
 ---
 
@@ -162,10 +127,45 @@ JUnit · Jenkins · GitHub Actions · Firebase Crashlytics · Firebase Analytics
 #### 보안 동향 보고서 AI 에이전트
 
 - **소속:** 라온시큐어
-- **역할:** 1인 설계·개발, 사내 실운영
+- **역할:** 1인 설계·개발 / 사내 실운영
+- **기간:** 2026.02 ~ 현재
 - **기술 스택:** LangGraph · n8n · Python
-- **개요:** 200+ 기업에 제공되는 보안 동향 보고서를 자동 작성하는 AI 에이전트. 생성–검증–재시도 흐름으로 설계해, 생성 결과가 콘텐츠 검증을 통과하지 못하면 재시도하고 통과한 결과만 내보낸다. 사내에서 직접 운영 중.
+- **개요:** 200+ 기업에 제공되는 보안 동향 보고서 생성을 자동화하는 AI 에이전트.
+- **성과:**
+  - 리서치–작성–검증–보정 단계를 분리하고 생성–검증–재시도 흐름을 적용해 사내 실운영.
 
+#### AI 악성앱 탐지
+
+- **소속:** 라온시큐어
+- **역할:** 개발 리드 (모델 포함)
+- **기간:** 2026.02 ~ 현재
+- **기술 스택:** Python · PyTorch · MLflow · FastAPI · Docker · GitHub Actions · MLOps · Android
+- **개요:** 시그니처 탐지가 놓치는 변종·제로데이를 보조하기 위한 ML 기반 악성앱 탐지 프로젝트.
+- **성과:**
+  - 자체 수집 13.4만 건으로 DexRay 기준선 학습(교차검증 F1 0.925, holdout F1 0.83~0.88) 및 수집 시점 기준 시간축 데이터 분리(TESSERACT)·GNN 계열 탐지 실험.
+  - MLflow·FastAPI·Docker·GitHub Actions 기반의 실험 추적·서빙·CI 기본 파이프라인 구성.
+
+#### AI 보이스피싱 탐지
+
+- **소속:** 라온시큐어
+- **역할:** 개발 리드 (모델 포함, 3인 팀)
+- **기간:** 2025.09 ~ 2025.12
+- **기술 스택:** KoBERT · 경량 LLM · STT · INT8/INT4 양자화 · 지식증류 · Python · NLP · Android
+- **개요:** 통화 음성을 STT 텍스트 스트림으로 변환하고 KoBERT/경량 LLM으로 실시간 분석해 보이스피싱을 탐지하는 프로젝트. 기획부터 프로토타입까지 3인 팀을 리드.
+- **성과:**
+  - STT → KoBERT/경량 LLM 실시간 탐지 파이프라인 설계
+  - 모델 경량화 작업 — KoBERT INT8 양자화로 351MB → 89MB, Recall 손실 없이 실기기 0.39s 추론 확인.
+  - Recall 99.34%는 데이터 불균형에 따른 과적합 시그널로 판단했고, FP Rate 22%(정상 5건 중 1건 오탐)는 실서비스 적용이 어렵다고 판단해 출시 보류를 제안. 부족한 데이터는 합성으로 보강했고 Hard Negative Mining 기반 후속 전략 수립.
+
+#### iGuard - 자녀 모바일 관리 서비스 (PoC)
+
+- **소속:** 라온시큐어
+- **역할:** Android App 개발
+- **기간:** 2022.06 ~ 2022.11
+- **기술 스택:** Flutter · Dart · Google Maps · Android
+- **개요:** Android 네이티브 중심 경력 중 Flutter/Dart를 실제 사내 PoC에 적용해 부모용 자녀 모바일 관리 앱을 개발했다.
+- **성과:**
+  - 상태별 허용 앱 설정, 지도 기반 위치 조회, 사용 시간 제어 UI 구현.
 
 #### TouchEn Transkey / mTranskey - Web SDK
 
@@ -173,12 +173,9 @@ JUnit · Jenkins · GitHub Actions · Firebase Crashlytics · Firebase Analytics
 - **역할:** 개발 및 운영
 - **기간:** 2018.10 ~ 2021.07
 - **기술 스택:** JavaScript · Java · Java Servlet · JSP · HTML5 · CSS3 · REST API
-- **개요:** 웹 기반 보안 키보드 솔루션. 키 입력 보호 및 패턴 잠금 기능 제공. 금융/공공기관 대상.
-- **핵심 성과:**
-    - 세션 미사용 통신 구조 개발 — 분산 시스템 대응 + 보안 강화, RESTful API 설계 원칙 준수
-    - 공공·금융기관 도입 요건(장차법) 충족 — 웹 접근성 심사 기준 준수
-    - 사용자 패턴 입력 보호 기능 개발, 반응형 웹 + 커스텀 뷰 기반 UI 리뉴얼
-
+- **개요:** 금융·공공기관 대상 웹 기반 보안 키보드 SDK. 키 입력 보호와 패턴 잠금 기능을 제공.
+- **성과:**
+  - 세션 미사용 통신 구조, 웹 접근성 대응, 패턴 잠금·반응형 UI 개발.
 
 #### TouchEn nxKey - macOS App
 
@@ -186,70 +183,66 @@ JUnit · Jenkins · GitHub Actions · Firebase Crashlytics · Firebase Analytics
 - **역할:** 개발
 - **기간:** 2019.04 ~ 2021.09
 - **기술 스택:** Objective-C · C++ · macOS DriverKit
-- **개요:** macOS용 보안 키보드 솔루션. 키 입력 후킹 및 보안 기능 제공.
-- **핵심 성과:** Hooking Daemon 개발, macOS DriverKit 기반 가상 키 발생 기능 개발.
-
+- **개요:** macOS용 보안 키보드 솔루션. 키 입력 후킹 및 보안 기능을 제공.
+- **성과:**
+  - Hooking Daemon 및 DriverKit 기반 가상 키 발생 기능 구현.
 
 ---
 
-## 사이드 프로젝트
+## 개인 프로젝트
 
 #### 1. 셀카픽 - 온디바이스 AI 셀카 분류 앱
-*1인 기획·설계·배포, Google Play 운영 중*
 
+- **역할:** 1인 기획·설계·개발·배포 / Google Play 운영
 - **기술 스택:** Kotlin · Coroutines · Jetpack Compose · MVVM · ML Kit · AdMob
-- **개요:** 사진첩의 셀카를 ML Kit Face Detection으로 분석해 유사 셀카 자동 그룹핑/베스트샷 추천하는 Android 앱. 1인 기획·설계·개발 + Compose + 멀티모듈 구조, Google Play 배포·운영 중.
-
-- ML Kit Face Detection 기반 유사도 점수 산출 알고리즘 설계.
-- 유사도 임계값 조정에 따른 정확도-오탐률 트레이드오프를 직접 측정 및 튜닝.
-- Google AdMob 광고 연동, 기획부터 스토어 배포 및 업데이트 운영까지 단독 진행.
-- [Google Play](https://play.google.com/store/apps/details?id=com.yjcho.aiphotocleaner)
-
+- **개요:** 사진첩의 셀카를 ML Kit Face Detection으로 분석해 유사 셀카를 그룹핑하고 베스트샷을 추천하는 Android 앱.
+- **주요 내용:**
+  - ML Kit Face Detection 기반 유사 셀카 그룹핑·베스트샷 추천 로직 구현, 임계값별 정확도–오탐률 트레이드오프 측정·튜닝.
+  - Compose + 멀티모듈 구조로 개발.
+  - AdMob 연동 광고 수익화.
+  - Play Store 배포·업데이트까지 단독 운영.
+- **링크:** https://play.google.com/store/apps/details?id=com.yjcho.aiphotocleaner
 
 #### 2. nworks - NAVER WORKS MCP 서버
-*1인 설계·개발, 오픈소스*
 
-- **기술 스택:** TypeScript · MCP · npm · GitHub Actions
-- **개요:** AI 에이전트가 NAVER WORKS(메일/캘린더/메시지 등)를 직접 호출할 수 있게 만든 CLI & MCP 서버. awesome-mcp-servers 등재, Glama AAA 인증, 다국어 README(EN/KO/JA).
+- **역할:** 1인 설계·개발 / 오픈소스·npm 배포
+- **기술 스택:** TypeScript · MCP · Tool Calling · OAuth · GitHub Actions
+- **개요:** NAVER WORKS Mail/Calendar/Message API를 AI 에이전트가 호출할 수 있도록 MCP 도구로 래핑한 CLI & 서버.
+- **주요 내용:**
+  - Service Account/User OAuth 인증 흐름을 분리 설계.
+  - awesome-mcp-servers 등재, Glama AAA 인증, EN/KO/JA README 및 npm 배포.
+- **링크:** https://github.com/yjcho9317/nworks / https://www.npmjs.com/package/nworks
 
-- NAVER WORKS API를 MCP 프로토콜로 래핑한 도구. Service Account와 User OAuth 인증 구조를 분리해 구현했고, 에이전트 호출 흐름을 정의했다.
-- 외부 API를 에이전트가 직접 호출하는 구조라 권한 오용이나 의도하지 않은 동작이 일어날 수 있어, 인증 흐름 설계 단계에서 이 부분을 함께 고려했다.
-- [GitHub](https://github.com/yjcho9317/nworks) / [npm](https://www.npmjs.com/package/nworks)
+#### 3. mcp-fence - MCP 프로토콜 보호 프록시
 
+- **역할:** 1인 설계·개발 / 오픈소스·npm 배포
+- **기술 스택:** TypeScript · MCP · Policy Engine · SQLite · GitHub Actions
+- **개요:** nworks 개발 중 확인한 MCP 도구 호출 보호 필요성에서 출발한 양방향 보호 프록시.
+- **주요 내용:**
+  - 프롬프트 인젝션·시크릿 유출·도구 변조를 탐지.
+  - 해시 피닝, allow/deny 정책, 인자 검증, 감사 로그 구현.
+  - 56개 탐지 패턴, 1,426개 테스트, 자체 측정 86% 탐지율, OWASP MCP Top 10 중 9개 항목 커버.
+- **링크:** https://github.com/yjcho9317/mcp-fence / https://www.npmjs.com/package/mcp-fence
 
-#### 3. aiignore-cli - AI 코딩 도구 ignore 자동화
-*1인 설계·개발, 오픈소스*
+#### 4. aiignore-cli - AI 코딩 도구 ignore 자동화
 
+- **역할:** 1인 설계·개발 / 오픈소스·npm 배포
 - **기술 스택:** TypeScript · npm · GitHub Actions
-- **개요:** AI 코딩 도구(Cursor, Claude Code 등)에 민감 정보가 노출되지 않도록 ignore 파일을 자동 생성하는 CLI. 바이브 코딩 시 private key 등 시크릿이 AI 컨텍스트로 유입되는 보안 리스크에 대응.
-
-- 주요 AI 코딩 도구의 ignore 파일을 .gitignore처럼 자동 생성한다. 단일 명령으로 여러 도구의 ignore 설정을 일괄 처리.
-- AI 시스템 자체를 안전하게 만드는 가드레일 쪽 관심사에서 만든 도구다.
-- [GitHub](https://github.com/yjcho9317/aiignore-cli) / [npm](https://www.npmjs.com/package/aiignore-cli)
-
-
-#### 4. mcp-fence - MCP 프로토콜 보호 프록시
-*1인 설계·개발, 오픈소스*
-
-- **기술 스택:** TypeScript · MCP · npm · GitHub Actions
-- **개요:** nworks(MCP 서버)를 개발하며 확인한 MCP 도구 호출 보호 필요성에서 출발해 만든 양방향 프록시. 프롬프트 인젝션, 시크릿 유출, 도구 변조를 탐지.
-
-- 양방향 스캐닝, SHA-256 기반 도구 설명 해시 피닝, 정책 엔진(allow/deny + 인자 검증), SQLite 감사 로그로 탐지 엔진 구성.
-- 56개 탐지 패턴, 1,426개 테스트, 자체 측정 86% 탐지율. OWASP MCP Top 10 중 9개 항목 커버.
-- [GitHub](https://github.com/yjcho9317/mcp-fence) / [npm](https://www.npmjs.com/package/mcp-fence)
+- **개요:** Cursor·Claude Code 등 AI 코딩 도구에 민감 정보가 유입되지 않도록 여러 ignore 설정을 단일 명령으로 생성하는 CLI.
+- **링크:** https://github.com/yjcho9317/aiignore-cli / https://www.npmjs.com/package/aiignore-cli
 
 ---
 
 ## 학력
 
-**신한대학교** · 컴퓨터공학 전공 · 2015.03 ~ 2018.08 졸업 (편입, 학점 4.22 / 4.5)
-- 졸업 프로젝트: 비콘 기반 스마트 홈 서비스 개발 · 학술 논문 대회 수상
+**신한대학교** · 컴퓨터공학 전공 · 2015.03 ~ 2018.08 졸업 (편입, 4.22 / 4.5)  
+- 졸업 프로젝트: 비콘 기반 스마트 홈 서비스 · 학술 논문 대회 수상
 
-**신흥대학교** · 웹프로그래밍 전공 · 2012.03 ~ 2015.02 수료 (학점 3.95 / 4.5)
+**신흥대학교** · 웹프로그래밍 전공 · 2012.03 ~ 2015.02 수료 (3.95 / 4.5)
 
 ---
 
 ## 자격증 · 수상
 
-- **정보처리기사** (한국산업인력공단, 2017.08)
-- **융복합지식학회 추계학술대회 우수논문상** (2017.10)
+- 정보처리기사 · 한국산업인력공단 · 2017.08
+- 융복합지식학회 추계학술대회 우수논문상 · 2017.10
