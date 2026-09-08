@@ -5,495 +5,138 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>조영진 · Android SDK / Platform Engineer</title>
-<meta content="Android SDK · Platform Engineer 9년. 200+ 기업·1,000만+ 사용자 SDK, 50만+ 다운로드 서비스 앱, AI Applied · On-device · Deployment 경험." name="description"/>
+<meta content="9년차 Android SDK · Platform Engineer. 200+ 기업·1,000만+ 사용자 모바일 SDK, Android 5~16 플랫폼 호환성, 50만+ 다운로드 서비스 앱, AI Application · Deployment 경험." name="description"/>
 <meta content="조영진" name="author"/>
 <link href="https://yjcho9317.github.io/android-portfolio/" rel="canonical"/>
 <meta content="profile" property="og:type"/>
 <meta content="조영진 · Android SDK / Platform Engineer" property="og:title"/>
-<meta content="SDK / Platform · Android App · AI Application &amp; Deployment" property="og:description"/>
+<meta content="Android SDK · Platform · Service App · AI Application · Deployment" property="og:description"/>
 <meta content="https://yjcho9317.github.io/android-portfolio/" property="og:url"/>
-<style>
-:root {
-  --bg:#0b0d12; --panel:#121620; --panel2:#171c28; --panel3:#1c2230;
-  --text:#f3f5f7; --sub:#b7bfcc; --muted:#7f8999; --line:#283142;
-  --blue:#79a8ff; --cyan:#70d6d1; --green:#71d49b; --yellow:#f0c36b;
-  --max:1120px; --radius:18px; --shadow:0 18px 60px rgba(0,0,0,.20);
+<style>:root{
+  --bg:#0b0d12;--panel:#121620;--panel2:#171c28;--panel3:#1c2230;
+  --text:#f3f5f7;--sub:#b7bfcc;--muted:#7f8999;--line:#283142;
+  --blue:#79a8ff;--cyan:#70d6d1;--max:1120px;--radius:18px;--shadow:0 10px 34px rgba(0,0,0,.14)
 }
-*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Pretendard","Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65;letter-spacing:-.012em}
-a{color:inherit}.wrap{max-width:var(--max);margin:auto;padding:0 28px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Pretendard","Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65;letter-spacing:-.012em}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:auto;padding:0 28px}
 nav{position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(255,255,255,.06);background:rgba(11,13,18,.88);backdrop-filter:blur(16px)}
-.nav{height:62px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:800;text-decoration:none}.navlinks{display:flex;gap:20px;flex-wrap:wrap}.navlinks a{font-size:13px;color:var(--muted);text-decoration:none}.navlinks a:hover{color:var(--text)}
-.hero{padding:92px 0 58px}.eyebrow{font-size:13px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--blue)}
-h1{font-size:clamp(43px,7vw,76px);line-height:1.02;letter-spacing:-.055em;margin:14px 0 18px}.hero-title{font-size:clamp(19px,3vw,28px);font-weight:750;letter-spacing:-.025em;margin:0 0 18px}.hero-desc{max-width:850px;color:var(--sub);font-size:17px;margin:0}.hero-desc strong{color:var(--text)}
-.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}.btn{border:1px solid var(--line);border-radius:999px;padding:9px 14px;font-size:13px;text-decoration:none;color:var(--sub);background:#0e1219}.btn:hover{border-color:#4e6382;color:var(--text)}
-.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:46px}.metric{padding:20px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,var(--panel2),var(--panel));box-shadow:var(--shadow)}.metric b{display:block;font-size:25px;letter-spacing:-.04em}.metric span{display:block;color:var(--muted);font-size:12px;margin-top:4px}
-section{padding:64px 0;border-top:1px solid rgba(255,255,255,.06)}.section-head{display:flex;justify-content:space-between;gap:24px;align-items:flex-end;margin-bottom:28px}.section-kicker{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}h2{font-size:34px;line-height:1.15;letter-spacing:-.04em;margin:7px 0 0}.section-note{max-width:560px;color:var(--muted);font-size:14px;margin:0}
-.expertise{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.expert{border:1px solid var(--line);background:var(--panel);border-radius:var(--radius);padding:22px}.expert small{color:var(--blue);font-weight:800}.expert h3{margin:8px 0 7px;font-size:18px}.expert p{color:var(--muted);font-size:13px;margin:0}.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}.chip{font-size:11px;border:1px solid var(--line);background:#0e1219;color:#aeb8c7;border-radius:999px;padding:5px 8px}
-.story{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.story-card{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);padding:25px}.story-card h3{margin:0 0 9px}.story-card p{margin:0;color:var(--sub)}.path{display:grid;gap:9px}.path-item{display:grid;grid-template-columns:90px 1fr;gap:15px;padding:12px 0;border-bottom:1px solid var(--line)}.path-item:last-child{border:0}.path-item b{font-size:12px;color:var(--blue)}.path-item span{font-size:14px;color:var(--sub)}
-.project{border:1px solid var(--line);border-radius:22px;background:linear-gradient(180deg,var(--panel2),var(--panel));overflow:hidden;margin:0 0 18px;box-shadow:var(--shadow)}.project-top{padding:28px}.project-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}.project-label{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}.project h3{font-size:25px;line-height:1.2;letter-spacing:-.035em;margin:6px 0 7px}.period{font-size:12px;color:var(--muted);white-space:nowrap}.role{font-size:13px;color:var(--cyan);font-weight:700}.summary{color:var(--sub);margin:14px 0 0;max-width:900px}.project-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:20px}.pm{border:1px solid var(--line);border-radius:12px;padding:13px;background:#0f131b}.pm b{display:block;font-size:17px;letter-spacing:-.025em}.pm span{font-size:11px;color:var(--muted)}
-.project-body{border-top:1px solid var(--line);padding:25px 28px;background:rgba(0,0,0,.08)}.detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.detail{border:1px solid var(--line);border-radius:14px;padding:16px;background:rgba(255,255,255,.018)}.detail h4{font-size:13px;color:#dce4ef;margin:0 0 8px}.detail ul{margin:0;padding-left:18px}.detail li{color:var(--sub);font-size:13px;margin:6px 0}.rms-details .detail:last-child{grid-column:1/-1}.decision{border-left:3px solid var(--blue);background:rgba(121,168,255,.08);border-radius:0 12px 12px 0;padding:14px 16px;margin:16px 0 0;color:#dce6f5;font-size:13px}.links{display:flex;gap:9px;flex-wrap:wrap;margin-top:17px}.link{font-size:12px;color:var(--blue);text-decoration:none}.link:hover{text-decoration:underline}
-.visual{display:grid;grid-template-columns:1fr 1fr;gap:18px}.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:10px}.shots img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
-.shots-uniform img{aspect-ratio:9/19.5;object-fit:contain;background:var(--panel3)}.compact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.compact{border:1px solid var(--line);border-radius:16px;background:var(--panel);padding:20px}.compact h3{font-size:17px;margin:5px 0}.compact p{font-size:13px;color:var(--sub);margin:8px 0 0}.compact ul{padding-left:18px;margin:12px 0 0}.compact li{font-size:12.5px;color:var(--muted);margin:5px 0}.compact-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:14px 0}.compact-metric{border:1px solid var(--line);border-radius:11px;background:#0f131b;padding:10px}.compact-metric b{display:block;font-size:15px;letter-spacing:-.025em;color:var(--text)}.compact-metric span{display:block;font-size:10.5px;color:var(--muted);margin-top:2px}.inline-badges{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0}.badge{font-size:11px;font-weight:700;color:var(--cyan);border:1px solid rgba(112,214,209,.28);background:rgba(112,214,209,.06);border-radius:999px;padding:5px 9px}.tagline{font-size:11px;color:var(--blue);font-weight:800;letter-spacing:.07em;text-transform:uppercase}
-.side-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.side{border:1px solid var(--line);border-radius:18px;background:var(--panel);padding:21px}.side h3{font-size:18px;margin:5px 0}.side p,.side li{font-size:13px;color:var(--sub)}.side ul{padding-left:18px}.side.featured-side{grid-column:span 2}.side-layout{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.skill-groups{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.skill-group{border:1px solid var(--line);border-radius:16px;background:var(--panel);padding:19px}.skill-group h3{font-size:14px;margin:0 0 10px}.skill-group p{font-size:12px;color:var(--muted);margin:0}
+.nav{height:62px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-weight:800;text-decoration:none}
+.navlinks{display:flex;gap:20px;flex-wrap:wrap}
+.navlinks a{font-size:13px;color:var(--muted);text-decoration:none}
+.navlinks a:hover{color:var(--text)}
+.hero{padding:92px 0 58px}
+.eyebrow{font-size:13px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--blue)}
+h1{font-size:clamp(43px,7vw,76px);line-height:1.02;letter-spacing:-.055em;margin:14px 0 18px}
+.hero-title{font-size:clamp(19px,3vw,28px);font-weight:750;letter-spacing:-.025em;margin:0 0 18px}
+.hero-desc{max-width:900px;color:var(--sub);font-size:17px;margin:0}
+.hero-desc strong{color:var(--text)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}
+.btn{border:1px solid var(--line);border-radius:999px;padding:9px 14px;font-size:13px;text-decoration:none;color:var(--sub);background:#0e1219}
+.btn:hover{border-color:#4e6382;color:var(--text)}
+section{padding:64px 0;border-top:1px solid rgba(255,255,255,.06)}
+#expertise{padding-top:36px}
+.section-head{display:flex;justify-content:space-between;gap:24px;align-items:flex-end;margin-bottom:28px}
+#expertise .section-head{margin-bottom:20px}
+.section-kicker{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+h2{font-size:34px;line-height:1.15;letter-spacing:-.04em;margin:7px 0 0}
+.expertise{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.tech-stack-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.tech-stack-card{border:1px solid var(--line);background:var(--panel);border-radius:var(--radius);padding:20px}
+.tech-stack-card h3{font-size:15px;margin:0 0 12px;color:var(--text)}
+.tech-stack-list{display:flex;flex-wrap:wrap;gap:7px}
+.tech-stack-list span{font-size:12px;line-height:1.4;color:var(--sub);border:1px solid var(--line);background:#0e1219;border-radius:999px;padding:6px 9px}
+.expert{border:1px solid var(--line);background:var(--panel);border-radius:var(--radius);padding:22px}
+.expert small{color:var(--blue);font-weight:800}
+.expert h3{font-size:19px;margin:8px 0 10px}
+.expert .evidence{display:block;margin:0 0 5px;font-size:13px;line-height:1.55;font-weight:700;color:var(--sub)}
+.expert .evidence-sub{margin:0;font-size:13px;line-height:1.55;color:var(--muted)}
+.story{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}
+.story-card{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);padding:25px}
+.path{display:grid;gap:9px}
+.path-item{display:grid;grid-template-columns:110px 1fr;gap:15px;padding:12px 0;border-bottom:1px solid var(--line)}
+.path-item:last-child{border:0}
+.path-item b{font-size:12px;color:var(--blue)}
+.path-item span{font-size:14px;color:var(--sub)}
+.project{border:1px solid var(--line);border-radius:22px;background:linear-gradient(180deg,var(--panel2),var(--panel));overflow:hidden;margin:0 0 18px;box-shadow:var(--shadow)}
+.project-top{padding:28px}
+.project-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}
+.project-label{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+.project h3{font-size:25px;line-height:1.2;letter-spacing:-.035em;margin:6px 0 7px}
+.period{font-size:12px;color:var(--muted);white-space:nowrap}
+.role{font-size:13px;color:var(--cyan);font-weight:700}
+.summary{color:var(--sub);margin:14px 0 0;max-width:930px}
+.project-stats{display:grid;grid-template-columns:repeat(var(--stat-count,4),minmax(0,1fr));gap:9px;margin-top:20px}
+.project-stat{min-width:0;padding:12px 14px;text-align:center;border:1px solid rgba(255,255,255,.07);border-radius:11px;background:rgba(255,255,255,.022)}
+.project-stat b{display:block;font-size:16px;line-height:1.3;letter-spacing:-.025em;color:var(--text)}
+.project-stat span{display:block;margin-top:3px;font-size:10.5px;line-height:1.4;color:var(--muted)}
+.flow{margin:18px 0 4px;border-left:3px solid var(--blue);padding:2px 0 2px 16px}
+.flow p{margin:0 0 10px;font-size:13.5px;line-height:1.75;color:var(--sub)}
+.flow p:last-child{margin:0}
+.project-body{border-top:1px solid rgba(255,255,255,.07);padding:26px 28px 27px;background:linear-gradient(180deg,rgba(7,10,16,.16),rgba(7,10,16,.28))}
+.detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;align-items:start}
+.detail{border:1px solid rgba(255,255,255,.075);border-radius:13px;padding:16px 17px;background:rgba(255,255,255,.018)}
+.detail h4{font-size:13.5px;line-height:1.4;font-weight:800;color:var(--text);margin:0 0 8px;letter-spacing:-.015em}
+.detail ul{margin:0;padding-left:17px}
+.detail li{color:var(--sub);font-size:12.8px;line-height:1.68;margin:5px 0}
+.detail li::marker{color:#697589}
+.tech-always{margin:0;padding:0;border:0}
+.tech-title{display:flex;align-items:center;gap:8px;margin:0 0 12px;font-size:12px;line-height:1.4;font-weight:800;color:var(--blue);letter-spacing:.015em}
+.tech-title::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 3px rgba(121,168,255,.08)}
+.tech-always .detail-grid{margin-top:0}
+.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}
+.chip{font-size:11px;line-height:1.35;border:1px solid rgba(255,255,255,.08);background:rgba(8,12,18,.62);color:#aeb8c7;border-radius:999px;padding:5px 8px}
+.links{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}
+.link{font-size:12px;font-weight:650;color:var(--blue);text-decoration:none}
+.link:hover{text-decoration:underline}
+.visual{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);gap:22px;align-items:start}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:10px;align-items:start}
+.shots img{width:100%;height:auto;border-radius:13px;border:1px solid rgba(255,255,255,.08);box-shadow:0 8px 22px rgba(0,0,0,.12)}
+.shots-uniform img{aspect-ratio:9/19.5;object-fit:contain;background:var(--panel3)}
+.compact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.compact{border:1px solid var(--line);border-radius:16px;background:var(--panel);padding:20px}
+.compact h3{font-size:17px;margin:5px 0}
+.compact p{font-size:13px;color:var(--sub);margin:8px 0 0}
+.compact ul{padding-left:18px;margin:12px 0 0}
+.compact li{font-size:12.5px;color:var(--muted);margin:5px 0}
+.compact .project-stats{margin-top:14px}
+.compact .project-stat{padding:11px 12px}
+.compact .project-stat b{font-size:15px}
+.inline-badges{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0}
+.badge{font-size:11px;font-weight:700;color:var(--cyan);border:1px solid rgba(112,214,209,.28);background:rgba(112,214,209,.06);border-radius:999px;padding:5px 9px}
+.tagline{font-size:11px;color:var(--blue);font-weight:800;letter-spacing:.07em;text-transform:uppercase}
+.side-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.side{border:1px solid var(--line);border-radius:18px;background:var(--panel);padding:21px}
+.side h3{font-size:18px;margin:5px 0}
+.side p,.side li{font-size:13px;color:var(--sub)}
+.side ul{padding-left:18px}
+.side.featured-side{grid-column:span 2}
+.side-layout{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 footer{padding:42px 0 70px;color:var(--muted);font-size:12px}
-@media(max-width:900px){.metrics,.expertise{grid-template-columns:repeat(2,1fr)}.story,.visual,.side-layout{grid-template-columns:1fr}.project-metrics{grid-template-columns:repeat(2,1fr)}.detail-grid,.compact-grid,.side-grid,.skill-groups{grid-template-columns:1fr}.rms-details .detail:last-child{grid-column:auto}.side.featured-side{grid-column:auto}.navlinks{display:none}}
-@media(max-width:560px){.compact-metrics{grid-template-columns:1fr}.wrap{padding:0 18px}.hero{padding-top:62px}.metrics,.expertise{grid-template-columns:1fr}.project-top,.project-body{padding:20px}.project-head{display:block}.period{display:block;margin-top:7px}.shots{gap:6px}.section-head{display:block}.section-note{margin-top:10px}}
+@media(max-width:900px){.expertise{grid-template-columns:1fr}.story,.visual,.side-layout{grid-template-columns:1fr}.detail-grid,.compact-grid,.side-grid{grid-template-columns:1fr}.side.featured-side{grid-column:auto}.navlinks{display:none}}
+@media(max-width:760px){.project-stats{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:640px){.tech-stack-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.wrap{padding:0 18px}.hero{padding-top:62px}.project-top,.project-body{padding:20px}.project-head{display:block}.period{display:block;margin-top:7px}.section-head{display:block}.path-item{grid-template-columns:1fr;gap:4px}.shots{gap:6px}}
+@media(max-width:460px){.project-stats{grid-template-columns:1fr!important}}
 @page{size:A4;margin:12mm}
-    @media print{
-      /* 인쇄 테마: 변수 재정의로 전체를 밝은 배경·진한 텍스트로 전환 — 배경 그래픽 출력 없이도 읽힘 */
-      :root{--bg:#fff;--panel:#fff;--panel2:#fff;--panel3:#f4f5f7;--text:#111;--sub:#333;--muted:#555;--line:#c9ced6;--blue:#1f4fb8;--cyan:#0b6e67;--green:#1a6e3e;--yellow:#7a6115;--shadow:none}
-      nav,.actions{display:none!important}
-      html,body{background:#fff}
-      /* 여백·크기 압축: 화면용 대형 여백이 인쇄에서 빈 공간을 만들지 않게 */
-      .hero{padding:0 0 12px}
-      h1{font-size:32px;margin:6px 0 8px}
-      h2{font-size:21px}
-      section{padding:12px 0;border-top:1px solid #ddd}
-      .section-head{margin-bottom:10px}
-      .project{border-radius:10px;margin-bottom:10px;background:#fff}
-      .project-top,.project-body{padding:14px 16px}
-      .expert{padding:12px 14px}
-      /* 페이지 분할 제어: 큰 카드는 흐르게 두고, 원자 단위만 잘리지 않게 */
-      h2,h3,.section-head,.project-head{break-after:avoid}
-      .project,.project-top{break-inside:auto}
-      .project-head,.summary,.detail,.compact,.side,.expert,.skill-group,.path-item,
-      .project-metrics,.compact-metrics,.pm-row,.chips,.shots{break-inside:avoid}
-      /* 스크린샷: 숨기지 않고 축소 유지 — 포트폴리오 제출물의 핵심 증거 */
-      .shots img{border-color:#ccc;border-radius:6px;background:#f4f5f7}
-      a{color:#1f4fb8}
-      .chip,.pm,.compact-metric{background:#fff;border-color:#d5d9df}
-    }
-
-
-/* Editorial portfolio refinements */
-.expertise-inline{
-  display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;
-  padding:16px 0 2px;border-top:1px solid var(--line);
-}
-.expertise-inline span{font-size:14px;color:var(--sub)}
-.expertise-inline b{color:var(--text);font-weight:750}
-
-.product-stats{
-  display:flex;flex-wrap:wrap;gap:18px 28px;margin-top:20px;padding-top:16px;
-  border-top:1px solid var(--line)
-}
-.product-stat b{display:block;font-size:21px;letter-spacing:-.03em}
-.product-stat span{font-size:11px;color:var(--muted)}
-
-.journey{
-  display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:22px;
-  border-top:1px solid var(--line);border-bottom:1px solid var(--line)
-}
-.journey-step{position:relative;padding:16px 14px}
-.journey-step:not(:last-child)::after{
-  content:"→";position:absolute;right:-8px;top:50%;transform:translateY(-50%);
-  color:var(--muted);font-size:16px
-}
-.journey-step b{display:block;font-size:13px;margin-bottom:4px}
-.journey-step span{font-size:11px;color:var(--muted);line-height:1.4}
-
-.arch-diagram{
-  display:grid;grid-template-columns:1fr 34px 1fr 34px 1fr;align-items:stretch;
-  gap:8px;margin:20px 0 4px
-}
-.arch-box{
-  border:1px solid var(--line);border-radius:14px;padding:16px;background:#0f131b
-}
-.arch-box small{display:block;color:var(--blue);font-weight:800;margin-bottom:6px}
-.arch-box b{display:block;font-size:15px}
-.arch-box span{display:block;color:var(--muted);font-size:11px;margin-top:4px}
-.arch-arrow{display:flex;align-items:center;justify-content:center;color:var(--muted)}
-.arch-highlights{
-  display:flex;flex-wrap:wrap;gap:8px;margin-top:14px
-}
-.arch-highlights span{
-  border:1px solid var(--line);border-radius:999px;padding:6px 10px;
-  font-size:11px;color:var(--sub)
-}
-
-/* Slightly flatter, less dashboard-like */
-.expert,.pm,.compact-metric{box-shadow:none}
-.project{box-shadow:0 10px 34px rgba(0,0,0,.14)}
-.detail{background:transparent}
-.chips{margin-top:16px}
-.skill-groups{display:none}
-
-@media(max-width:900px){
-  .journey{grid-template-columns:1fr}
-  .journey-step{border-bottom:1px solid var(--line)}
-  .journey-step:last-child{border-bottom:0}
-  .journey-step:not(:last-child)::after{content:"↓";right:14px;top:auto;bottom:-11px;transform:none}
-  .arch-diagram{grid-template-columns:1fr}
-  .arch-arrow{transform:rotate(90deg)}
-}
-
-
-/* v2 editorial: keep identity cards, flatten project internals */
-.expertise{
-  display:grid!important;
-  grid-template-columns:repeat(3,1fr)!important;
-  gap:12px!important;
-}
-.expertise-inline{display:none!important}
-
-.flat-stats{
-  display:flex;flex-wrap:wrap;gap:12px 0;margin-top:20px;
-  padding-top:15px;border-top:1px solid var(--line)
-}
-.flat-stat{
-  padding:0 24px 0 0;margin-right:24px;
-  border-right:1px solid var(--line)
-}
-.flat-stat:last-child{border-right:0;margin-right:0}
-.flat-stat b{display:block;font-size:19px;letter-spacing:-.025em}
-.flat-stat span{display:block;font-size:11px;color:var(--muted);margin-top:2px}
-
-.flow-line{
-  display:flex;align-items:stretch;flex-wrap:wrap;gap:0;margin-top:20px;
-  padding-top:15px;border-top:1px solid var(--line)
-}
-.flow-item{padding:0 18px;position:relative}
-.flow-item:first-child{padding-left:0}
-.flow-item:not(:last-child)::after{
-  content:"→";position:absolute;right:-5px;top:2px;color:var(--muted)
-}
-.flow-item b{display:block;font-size:13px}
-.flow-item span{display:block;font-size:11px;color:var(--muted);margin-top:3px}
-
-.arch-line{
-  display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:20px;
-  padding-top:15px;border-top:1px solid var(--line)
-}
-.arch-node b{font-size:13px}
-.arch-node span{display:block;font-size:11px;color:var(--muted)}
-.arch-sep{color:var(--muted)}
-.arch-meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:12px}
-.arch-meta span{font-size:11px;color:var(--sub)}
-.arch-meta b{color:var(--text)}
-
-.product-stats,.journey,.arch-diagram,.arch-highlights{display:none!important}
-
-/* remove small boxed KPI feel in compact projects too */
-.compact-metrics{
-  display:flex!important;flex-wrap:wrap;gap:12px 0!important;
-  margin:14px 0!important;border-top:1px solid var(--line);padding-top:12px
-}
-.compact-metric{
-  border:0!important;background:transparent!important;border-radius:0!important;
-  padding:0 18px 0 0!important;margin-right:18px;border-right:1px solid var(--line)!important
-}
-.compact-metric:last-child{border-right:0!important;margin-right:0}
-.compact-metric b{font-size:14px!important}
-.compact-metric span{font-size:10.5px!important}
-
-@media(max-width:900px){
-  .expertise{grid-template-columns:1fr!important}
-}
-@media(max-width:560px){
-  .flat-stats,.flow-line,.arch-line{display:block}
-  .flat-stat,.flow-item{border-right:0;margin:0 0 12px;padding:0}
-  .flow-item:not(:last-child)::after{content:"";display:none}
-  .arch-sep{display:none}
-  .arch-node{margin-bottom:12px}
-}
-
-.expert .evidence{
-  display:block;
-  margin:13px 0 7px;
-  font-size:20px;
-  line-height:1.25;
-  font-weight:800;
-  letter-spacing:-.035em;
-  color:var(--text);
-}
-.expert .evidence-sub{
-  margin:0;
-  font-size:13px;
-  line-height:1.55;
-  color:var(--muted);
-}
-
-/* v4: expertise title is the primary hierarchy */
-.expert h3{
-  font-size:19px;
-  margin:8px 0 10px;
-}
-.expert .evidence{
-  display:block;
-  margin:0 0 5px;
-  font-size:13px;
-  line-height:1.55;
-  font-weight:700;
-  letter-spacing:0;
-  color:var(--sub);
-}
-.expert .evidence-sub{
-  margin:0;
-  font-size:13px;
-  line-height:1.55;
-  color:var(--muted);
-}
-
-/* v5: core expertise sits directly below hero */
-#expertise{
-  padding-top:36px;
-}
-#expertise .section-head{
-  margin-bottom:20px;
-}
-#expertise h2{
-  margin-top:0;
-}
-
-/* v6: centered, evenly spaced project highlights without cards */
-.flat-stats{
-  display:grid !important;
-  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
-  gap:0 !important;
-  align-items:stretch;
-}
-.flat-stat{
-  margin:0 !important;
-  padding:2px 18px !important;
-  border-right:1px solid var(--line) !important;
-  text-align:center;
-  min-width:0;
-}
-.flat-stat:last-child{
-  border-right:0 !important;
-}
-.flat-stat b{
-  text-align:center;
-}
-.flat-stat span{
-  text-align:center;
-}
-
-@media(max-width:760px){
-  .flat-stats{
-    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
-    row-gap:18px !important;
-  }
-  .flat-stat:nth-child(2n){
-    border-right:0 !important;
-  }
-}
-@media(max-width:460px){
-  .flat-stats{
-    grid-template-columns:1fr !important;
-  }
-  .flat-stat{
-    border-right:0 !important;
-    padding:4px 0 !important;
-  }
-}
-
-
-/* v7: one shared project metric language across all project sizes */
-.project-stats{
-  display:grid;
-  grid-template-columns:repeat(var(--stat-count,4), minmax(0,1fr));
-  gap:0;
-  margin-top:20px;
-  padding-top:15px;
-  border-top:1px solid var(--line);
-}
-.project-stat{
-  min-width:0;
-  padding:2px 18px;
-  text-align:center;
-  border-right:1px solid var(--line);
-}
-.project-stat:first-child{padding-left:0}
-.project-stat:last-child{
-  padding-right:0;
-  border-right:0;
-}
-.project-stat b{
-  display:block;
-  font-size:17px;
-  line-height:1.3;
-  letter-spacing:-.025em;
-  color:var(--text);
-}
-.project-stat span{
-  display:block;
-  margin-top:3px;
-  font-size:10.5px;
-  line-height:1.4;
-  color:var(--muted);
-}
-
-/* Old experimental metric/flow layouts are no longer used */
-.flat-stats,.product-stats,.journey,.flow-line,.arch-line,.arch-meta,
-.arch-diagram,.arch-highlights,.compact-metrics{
-  display:none!important;
-}
-
-/* Compact/side projects use the same metric component, just tighter spacing */
-.compact .project-stats,
-.side .project-stats{
-  margin-top:14px;
-  padding-top:12px;
-}
-.compact .project-stat,
-.side .project-stat{
-  padding:1px 12px;
-}
-.compact .project-stat b,
-.side .project-stat b{
-  font-size:15px;
-}
-
-@media(max-width:760px){
-  .project-stats{
-    grid-template-columns:repeat(2,minmax(0,1fr))!important;
-    row-gap:18px;
-  }
-  .project-stat:nth-child(2n){
-    border-right:0;
-  }
-  .project-stat:nth-child(n+3){
-    padding-top:2px;
-  }
-}
-@media(max-width:460px){
-  .project-stats{
-    grid-template-columns:1fr!important;
-    row-gap:12px;
-  }
-  .project-stat{
-    border-right:0!important;
-    padding:2px 0!important;
-  }
-}
-
-/* v8: metric rows use only meaningful evidence; variable count per project */
-.project-stats{
-  max-width:100%;
-  margin-left:auto;
-  margin-right:auto;
-}
-.project-stats[style*="--stat-count:2"]{
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  max-width:680px;
-}
-.project-stats[style*="--stat-count:3"]{
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  max-width:860px;
-}
-.project-stats[style*="--stat-count:4"]{
-  grid-template-columns:repeat(4,minmax(0,1fr));
-  max-width:none;
-}
-
-/* v9: unified subtle metric cards — screen + print */
-.project-stats{
-  display:grid !important;
-  gap:9px !important;
-  margin-top:20px !important;
-  padding-top:0 !important;
-  border-top:0 !important;
-  max-width:none !important;
-}
-.project-stats[style*="--stat-count:2"]{
-  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
-}
-.project-stats[style*="--stat-count:3"]{
-  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
-}
-.project-stats[style*="--stat-count:4"]{
-  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
-}
-.project-stat{
-  min-width:0;
-  margin:0 !important;
-  padding:12px 14px !important;
-  text-align:center;
-  border:1px solid rgba(255,255,255,.07) !important;
-  border-radius:11px;
-  background:rgba(255,255,255,.022);
-}
-.project-stat:first-child,
-.project-stat:last-child{
-  padding-left:14px !important;
-  padding-right:14px !important;
-}
-.project-stat b{
-  display:block;
-  font-size:16px;
-  line-height:1.3;
-  letter-spacing:-.025em;
-  color:var(--text);
-  text-align:center;
-}
-.project-stat span{
-  display:block;
-  margin-top:3px;
-  font-size:10.5px;
-  line-height:1.4;
-  color:var(--muted);
-  text-align:center;
-}
-
-/* Compact projects use exactly the same visual language */
-.compact .project-stats,
-.side .project-stats{
-  margin-top:14px !important;
-  padding-top:0 !important;
-}
-.compact .project-stat,
-.side .project-stat{
-  padding:11px 12px !important;
-}
-.compact .project-stat b,
-.side .project-stat b{
-  font-size:15px;
-}
-
-@media(max-width:760px){
-  .project-stats,
-  .project-stats[style*="--stat-count:2"],
-  .project-stats[style*="--stat-count:3"],
-  .project-stats[style*="--stat-count:4"]{
-    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
-    gap:8px !important;
-  }
-}
-@media(max-width:460px){
-  .project-stats,
-  .project-stats[style*="--stat-count:2"],
-  .project-stats[style*="--stat-count:3"],
-  .project-stats[style*="--stat-count:4"]{
-    grid-template-columns:1fr !important;
-  }
-}
-
-/* Print: preserve grouping and use a very light neutral fill */
 @media print{
-  .project-stats{
-    gap:6px !important;
-    margin-top:9px !important;
-    break-inside:avoid;
-  }
-  .project-stat{
-    background:#f6f7f9 !important;
-    border:1px solid #d9dde3 !important;
-    border-radius:6px !important;
-    padding:8px 9px !important;
-    break-inside:avoid;
-  }
-  .project-stat b{
-    color:#111 !important;
-    font-size:13px !important;
-  }
-  .project-stat span{
-    color:#555 !important;
-    font-size:9px !important;
-  }
+  :root{--bg:#fff;--panel:#fff;--panel2:#fff;--panel3:#f4f5f7;--text:#111;--sub:#333;--muted:#555;--line:#c9ced6;--blue:#1f4fb8;--cyan:#0b6e67;--shadow:none}
+  nav,.actions{display:none!important}html,body{background:#fff}.hero{padding:0 0 12px}h1{font-size:32px;margin:6px 0 8px}h2{font-size:21px}section{padding:12px 0;border-top:1px solid #ddd}.section-head{margin-bottom:10px}.project{border-radius:10px;margin-bottom:10px;background:#fff}.project-top,.project-body{padding:14px 16px}.expert{padding:12px 14px}
+  h2,h3,.section-head,.project-head{break-after:avoid}.project-head,.summary,.detail,.compact,.side,.expert,.path-item,.project-stats,.chips,.shots,.flow{break-inside:avoid}
+  .project-stat{background:#f6f7f9!important;border:1px solid #d9dde3!important;border-radius:6px!important;padding:8px 9px!important}.project-stat b{color:#111!important;font-size:13px!important}.project-stat span{color:#555!important;font-size:9px!important}
+  .shots img{border-color:#ccc;border-radius:6px;background:#f4f5f7}a{color:#1f4fb8}.chip{background:#fff;border-color:#d5d9df}.detail h4{color:#222}.tech-title::before{display:none}.flow p{font-size:11.5px}
 }
-
+/* Scan-first project facts */
+.fact-list{margin-top:18px;border-top:1px solid var(--line)}
+.fact{display:grid;grid-template-columns:190px 1fr;gap:18px;padding:12px 0;border-bottom:1px solid var(--line)}
+.fact:last-child{border-bottom:0}
+.fact b{font-size:13px;line-height:1.5;color:var(--text)}
+.fact span{font-size:13px;line-height:1.65;color:var(--sub)}
+@media(max-width:680px){.fact{grid-template-columns:1fr;gap:4px}}
+@media print{.fact{grid-template-columns:155px 1fr;gap:12px;padding:7px 0;break-inside:avoid}.fact b,.fact span{font-size:10.5px}}
 </style>
 </head>
 <body>
@@ -501,20 +144,20 @@ footer{padding:42px 0 70px;color:var(--muted);font-size:12px}
 <div class="wrap nav">
 <a class="brand" href="#top">조영진</a>
 <div class="navlinks">
-<a href="#career">Career</a><a href="#sdk">SDK</a><a href="#app">App</a><a href="#ai">AI Deploy</a><a href="#other">Other</a><a href="#side">Side</a>
-</div>
+
+<a href="#career">Career</a><a href="#skills">Skills</a><a href="#sdk">SDK</a><a href="#app">App</a><a href="#ai">AI</a><a href="#other">Other</a><a href="#side">Side</a></div>
 </div>
 </nav>
 <main id="top">
 <div class="wrap hero">
-<div class="eyebrow">Android SDK · Platform Engineer · 9 Years</div>
+<div class="eyebrow">Android SDK · Platform Engineer · 9년차</div>
 <h1>조영진</h1>
-<p class="hero-title">Android 플랫폼·SDK·앱 개발을 기반으로<br/>온디바이스 AI 적용·배포까지 영역을 확장하고 있다.</p>
-<p class="hero-desc">금융·공공 <strong>200+ 기업</strong>, <strong>1,000만+ 사용자</strong> 서비스에 탑재되는 Android/iOS SDK를 메인으로 개발·운영했다. Public API부터 NDK/JNI, OEM 호환성, 품질·배포까지 담당했다. 서비스 앱에서는 <strong>50만+ 다운로드</strong> Android 앱을 개발·운영했다. 최근에는 딥페이크·보이스피싱·악성앱 탐지와 온디바이스 AI SDK까지 영역을 확장하고 있다.</p>
+<p class="hero-title">200+ 기업 · 1,000만+ 사용자 환경의 모바일 SDK 메인 개발을 맡았다.<br/>50만+ 다운로드 서비스 앱을 개발·운영했고, AI 기능을 실제 서비스에 출시했다.</p>
+<p class="hero-desc">현재는 AI를 실제 제품에 적용해 사용자에게 제공하는 데 집중하고 있다.</p>
 <div class="actions"><a class="btn" href="https://github.com/yjcho9317" target="_blank">GitHub</a><a class="btn" href="https://velog.io/@yjcho9317" target="_blank">Velog</a><a class="btn" href="https://yjcho9317.tistory.com/" target="_blank">Tistory</a></div>
 </div><section id="expertise"><div class="wrap">
 <div class="section-head"><div><h2>핵심 역량</h2></div></div>
-<div class="expertise"><div class="expert"><small>01</small><h3>Android SDK · Platform</h3><span class="evidence">200+ 기업 · 1,000만+ 사용자</span><p class="evidence-sub">대규모 모바일 SDK 설계·개발·운영 경험</p></div><div class="expert"><small>02</small><h3>Android App</h3><span class="evidence">50만+ 다운로드 · 평점 4.5</span><p class="evidence-sub">실사용 Android 서비스 앱 개발·운영 경험</p></div><div class="expert"><small>03</small><h3>AI Application · Deployment</h3><span class="evidence">AI 서비스 적용 · 온디바이스 배포</span><p class="evidence-sub">AI 모델을 Android 서비스에 적용·출시하고 온디바이스 SDK로 확장한 경험</p></div></div>
+<div class="expertise"><div class="expert"><small>01</small><h3>Android SDK · Platform</h3><span class="evidence">200+ 기업 · 1,000만+ 사용자</span><p class="evidence-sub">Android 5~16 · Public API 하위 호환 · 고객사 연동 · NDK/JNI · OEM 대응</p></div><div class="expert"><small>02</small><h3>Android App</h3><span class="evidence">50만+ 다운로드 · 평점 4.5</span><p class="evidence-sub">서비스 앱 구조 전환 · 신규 기능 · AI 기능 출시 · Play Store 운영</p></div><div class="expert"><small>03</small><h3>AI Application · Deployment</h3><span class="evidence">50만+ 앱 AI 기능 출시 · 온디바이스 AI SDK 개발</span><p class="evidence-sub">실기기 검증 · 구조 전환 · 모델 배포 · 런타임 호환</p></div></div>
 </div></section>
 <section id="career"><div class="wrap">
 <div class="section-head"><div><div class="section-kicker">Career</div><h2>경력</h2></div></div>
@@ -524,16 +167,27 @@ footer{padding:42px 0 70px;color:var(--muted);font-size:12px}
 <div><h3 style="margin-bottom:.2rem;">라온시큐어 · AI 연구 2팀 · 책임연구원</h3><p style="margin:0;">2018.04 ~ 현재 · 9년차</p></div>
 </div>
 <div class="path">
-<div class="path-item"><b>2026.04 ~ 현재</b><span>KISA 온디바이스 딥페이크 탐지 SDK 과제 — SDK 설계·개발 메인</span></div>
-<div class="path-item"><b>2026.02 ~ 현재</b><span>AI 악성앱 탐지 — 개발 리드</span></div>
-<div class="path-item"><b>2025.02 ~ 2025.10</b><span>클라우드 서비스 전환 — 앱 개발 리드</span></div>
-<div class="path-item"><b>2024.04 ~ 2024.12</b><span>AI 딥페이크 탐지 — 앱 개발 리드</span></div>
-<div class="path-item"><b>2021.07 ~ 현재</b><span>라온 모바일 시큐리티 — Android 앱 개발 및 운영</span></div>
-<div class="path-item"><b>2019.04 ~ 현재</b><span>TouchEn mVaccine — Android/iOS SDK 메인 개발자</span></div>
-<div class="path-item"><b>2019.04 ~ 2021.09</b><span>TouchEn nxKey — macOS 개발</span></div>
-<div class="path-item"><b>2018.10 ~ 2021.07</b><span>TouchEn Transkey / mTranskey — Web SDK 개발 및 운영</span></div>
+<div class="path-item"><b>2026.04 ~ 현재 · 2026.10 (예정)</b><span>KISA 온디바이스 딥페이크 탐지 SDK 과제 · SDK 설계·개발 메인</span></div>
+<div class="path-item"><b>2026.02 ~ 현재</b><span>AI 악성앱 탐지 · 개발 리드</span></div>
+<div class="path-item"><b>2025.02 ~ 2025.10</b><span>클라우드 서비스 전환 · 앱 개발 리드</span></div>
+<div class="path-item"><b>2024.04 ~ 2024.12</b><span>AI 딥페이크 탐지 · 앱 개발 리드</span></div>
+<div class="path-item"><b>2021.07 ~ 현재</b><span>라온 모바일 시큐리티 · Android 앱 개발 및 운영</span></div>
+<div class="path-item"><b>2019.04 ~ 현재</b><span>TouchEn mVaccine · Android/iOS SDK 메인 개발자</span></div>
+<div class="path-item"><b>2019.04 ~ 2021.09</b><span>TouchEn nxKey · macOS 개발</span></div>
+<div class="path-item"><b>2018.10 ~ 2021.07</b><span>TouchEn Transkey / mTranskey · Web SDK 개발 및 운영</span></div>
 </div>
 </div>
+</div>
+</div></section><section id="skills"><div class="wrap">
+<div class="section-head"><div><div class="section-kicker">Skills</div><h2>기술 스택</h2></div></div>
+<div class="tech-stack-grid">
+<div class="tech-stack-card"><h3>Android SDK · Platform</h3><div class="tech-stack-list"><span>Android SDK</span><span>Kotlin</span><span>Java</span><span>NDK/JNI</span><span>C/C++</span><span>AIDL/IPC</span><span>Public API · 하위 호환</span><span>AAR</span><span>ProGuard/R8</span><span>OEM 호환성</span><span>멀티모듈</span><span>WorkManager</span><span>CMake</span></div></div>
+<div class="tech-stack-card"><h3>Android Application</h3><div class="tech-stack-list"><span>Coroutines/Flow</span><span>Hilt</span><span>Jetpack Compose</span><span>Room</span><span>Retrofit</span><span>ML Kit</span><span>Firebase Crashlytics/Analytics</span></div></div>
+<div class="tech-stack-card"><h3>iOS SDK</h3><div class="tech-stack-list"><span>Swift</span><span>Objective-C</span></div></div>
+<div class="tech-stack-card"><h3>AI Application · Deployment</h3><div class="tech-stack-list"><span>ONNX Runtime</span><span>NNAPI</span><span>XNNPACK</span><span>TFLite</span><span>CoreML</span><span>양자화</span></div></div>
+<div class="tech-stack-card"><h3>ML · MLOps</h3><div class="tech-stack-list"><span>Python</span><span>PyTorch</span><span>MLflow</span><span>FastAPI</span><span>Docker</span></div></div>
+<div class="tech-stack-card"><h3>AI Agent · MCP</h3><div class="tech-stack-list"><span>LangGraph</span><span>n8n</span><span>MCP</span><span>TypeScript</span><span>OAuth</span></div></div>
+<div class="tech-stack-card"><h3>테스트 · CI/CD</h3><div class="tech-stack-list"><span>JUnit</span><span>GoogleTest</span><span>Jenkins</span><span>GitHub Actions</span></div></div>
 </div>
 </div></section>
 <section id="sdk"><div class="wrap">
@@ -541,17 +195,20 @@ footer{padding:42px 0 70px;color:var(--muted);font-size:12px}
 <article class="project">
 <div class="project-top">
 <div class="project-head"><div><div class="project-label">핵심 프로젝트</div><h3>TouchEn mVaccine SDK / APP</h3><div class="role">메인 개발자 · Android/iOS SDK · 2019.04 ~ 현재</div></div><span class="period">RaonSecure</span></div>
-<p class="summary">악성앱·루팅·디버깅·통신 위변조를 탐지하는 모바일 보안 SDK. 금융/공공 200+ 기업의 앱에 탑재되며, Public API부터 NDK 네이티브 레이어, OEM 호환성, 성능·품질·배포까지 설계·개발·운영을 담당했다.</p><div class="project-stats" style="--stat-count:4"><div class="project-stat"><b>200+</b><span>고객사</span></div><div class="project-stat"><b>1,000만+</b><span>탑재 사용자</span></div><div class="project-stat"><b>Android 5–16</b><span>메이저 12개 버전 · OEM 대응</span></div><div class="project-stat"><b>5배 이상</b><span>클라우드 전환 후 패턴 DB 확장</span></div></div>
+<p class="summary">악성앱·루팅·디버깅·통신 위변조를 탐지하는 모바일 보안 SDK. 금융/공공 200+ 기업의 앱에 탑재되며, Public API부터 NDK 네이티브 레이어, OEM 호환성, 성능·품질·배포까지 설계·개발·운영을 담당했다.</p><div class="project-stats" style="--stat-count:4"><div class="project-stat"><b>200+</b><span>고객사</span></div><div class="project-stat"><b>1,000만+</b><span>탑재 앱 사용자</span></div><div class="project-stat"><b>Android 5–16</b><span>메이저 12개 버전 · OEM 4사</span></div><div class="project-stat"><b>5배 이상</b><span>클라우드 전환 후 패턴 DB 확장</span></div></div>
+<div class="fact-list"><div class="fact"><b>Public API · 200+ 고객사</b><span>외부 API 유지 · 내부 구조 점진 변경 → 고객사 마이그레이션 없이 업데이트.</span></div><div class="fact"><b>Android 5–16 · OEM 4사</b><span>삼성/LG/샤오미/Pixel 차이 → Reflection 기반 호환성 레이어에서 흡수.</span></div><div class="fact"><b>멀티모듈 · Java→Kotlin</b><span>core/detection/ui 분리 · 모듈 단위 테스트 · 선택적 기능 연동.</span></div><div class="fact"><b>업데이트 안정성 · 재시도 · 무결성 검증</b><span>패턴·엔진 분리 · 필요한 파일만 분할 업데이트 → 전체 파일 교체 최소화 · 실패 시 재시도/무결성 재검증 · 중복 실행 방지.</span></div><div class="fact"><b>클라우드 전환 · 5인 팀 리드</b><span>로컬 DB 확장 한계 → 클라우드 전환 · 라이선스 기반에서 사용량 과금 구조로 전환 · 패턴 DB 5배+ · KISA 백신 성능 평가 인증.</span></div></div>
 </div>
 <div class="project-body visual">
 <div>
+<div class="tech tech-always"><div class="tech-title">기술 상세</div>
 <div class="detail-grid">
-<div class="detail"><h4>API · 호환성</h4><ul><li>호스트 앱 코드 수정 없이 업데이트할 수 있도록 Public API 하위 호환 원칙을 유지.</li><li>고객사 연동·마이그레이션 문서를 관리하고, 빌드 사이즈·ProGuard/R8·의존성 충돌 등 호스트 앱 영향을 점검.</li><li>Android 5~16, 삼성·LG·샤오미·Pixel 단편화를 Reflection 기반 호환성 레이어에서 흡수.</li></ul></div>
-<div class="detail"><h4>구조 · 마이그레이션</h4><ul><li>core/detection/ui 멀티모듈 분리로 기능별 유지보수·테스트·선택적 통합 구조 구성.</li><li>Public API 호환성을 유지하며 Java → Kotlin 마이그레이션.</li><li>클라우드 서비스 전환(5인 팀 앱 개발 리드) — 라이선스 → 사용량 과금 구조, 로컬 DB 제약 제거로 탐지 패턴 DB 5배+ 확장.</li><li>AIDL/Bound Service 기반 IPC 및 앱–웹 통신 구조 개발.</li></ul></div>
-<div class="detail"><h4>성능 · 안정성</h4><ul><li>통합 다운로드 → 분할 다운로드, 패턴/엔진 파일 분리로 SDK 크기·데이터 사용량 최적화.</li><li>재시도·무결성 검증·중복 실행 방지로 불안정한 네트워크에서도 복구 가능하도록 설계.</li><li>WorkManager+Coroutines 작업 생명주기 정리, JNI memory leak 추적·해결.</li></ul></div>
-<div class="detail"><h4>품질 · 멀티플랫폼</h4><ul><li>JUnit + Jenkins CI/CD + Firebase Crashlytics/Analytics 기반 품질·운영 체계.</li><li>KISA 백신 성능 평가 대응 및 인증 획득.</li><li>iOS 탈옥·원격·디버깅 탐지 모듈 개발 및 Objective-C SDK 유지보수.</li></ul></div>
+<div class="detail"><h4>API · 고객사 연동</h4><ul><li>빌드 크기 · ProGuard/R8 · 의존성 충돌 대응.</li><li>연동 가이드 · 샘플 프로젝트 · 마이그레이션 문서 · 릴리즈 노트 운영 · 고객사 기술 문의 대응.</li></ul></div>
+<div class="detail"><h4>통신 · 백그라운드</h4><ul><li>AIDL/Bound Service 기반 IPC와 앱–웹 통신 구조 설계.</li><li>WorkManager + Coroutines로 백그라운드 작업 생명주기 정리.</li></ul></div>
+<div class="detail"><h4>품질 · 운영</h4><ul><li>JUnit · Jenkins CI로 릴리즈 전 회귀 검증 · Firebase Crashlytics/Analytics로 배포 후 모니터링.</li><li>JNI 메모리 릭 원인 추적·해결.</li></ul></div>
+<div class="detail"><h4>iOS</h4><ul><li>iOS 탈옥·원격 제어·디버깅 탐지 모듈 개발, Objective-C SDK를 유지보수하고 Android와 대응되는 탐지 항목을 iOS에도 제공.</li></ul></div>
 </div>
-<div class="chips"><span class="chip">Android SDK</span><span class="chip">NDK/JNI</span><span class="chip">Kotlin</span><span class="chip">C++</span><span class="chip">AIDL</span></div>
+</div>
+<div class="chips"><span class="chip">Android SDK</span><span class="chip">NDK/JNI</span><span class="chip">Kotlin</span><span class="chip">C++</span><span class="chip">AIDL</span><span class="chip">Swift/Obj-C</span></div>
 <div class="links"><a class="link" href="https://play.google.com/store/apps/details?id=com.TouchEn.mVaccine.webs" target="_blank">Google Play ↗</a></div>
 </div>
 <div class="shots shots-uniform"><img alt="TouchEn mVaccine 메인" src="images/mVaccine_main.jpg"/><img alt="TouchEn mVaccine 탐지 목록" src="images/mVaccine_list.png"/><img alt="TouchEn mVaccine 결과" src="images/mVaccine_result.png"/></div>
@@ -563,67 +220,71 @@ footer{padding:42px 0 70px;color:var(--muted);font-size:12px}
 <article class="project">
 <div class="project-top">
 <div class="project-head"><div><div class="project-label">핵심 프로젝트</div><h3>라온 모바일 시큐리티</h3><div class="role">Android 앱 개발 및 운영 · 2021.07 ~ 현재</div></div><span class="period">RaonSecure</span></div>
-<p class="summary">악성앱·스미싱·딥페이크 등 10가지 이상의 보안 기능을 제공하는 Android 서비스 앱. 기존 구조의 현대화부터 신규 기능, AI 기능 탑재, Play Store 릴리즈와 사용자 피드백 기반 운영까지 담당했다.</p><div class="project-stats" style="--stat-count:3"><div class="project-stat"><b>50만+</b><span>다운로드</span></div><div class="project-stat"><b>4.5</b><span>Play Store 평점</span></div><div class="project-stat"><b>1,000+</b><span>사용자 평가</span></div></div>
+<p class="summary">mVaccine의 탐지 기능을 일반 사용자에게 제공하는 백신 앱. 악성앱·스미싱·딥페이크 등 10가지 이상의 보안 기능을 담고 있으며, 구조 전환·신규 기능·AI 기능 출시·Play Store 운영을 담당했다.</p><div class="project-stats" style="--stat-count:2"><div class="project-stat"><b>50만+</b><span>다운로드</span></div><div class="project-stat"><b>4.5</b><span>Play Store 평점 · 1,000+ 평가</span></div></div>
+<div class="fact-list"><div class="fact"><b>Thread/RxJava → MVVM/Coroutines</b><span>화면 단위 MVVM/Coroutines 전환 · 기존 XML 유지 + 신규 화면 Compose 적용 → 전면 재작성 없이 공존하며 정기 릴리즈 유지.</span></div><div class="fact"><b>SDK 기능 재사용</b><span>mVaccine 멀티모듈 구조를 활용해 필요한 탐지 기능만 선택적으로 연동.</span></div><div class="fact"><b>실서비스 운영 · 50만+</b><span>Play Store 정기 릴리즈 · Crashlytics/Analytics · 사용자 리뷰 기반 개선.</span></div><div class="fact"><b>AI 기능 출시 · 2024</b><span>딥페이크 영상 업로드·URL 입력·결과/랭킹 흐름 구현 및 출시.</span></div></div>
 </div>
 <div class="project-body visual">
 <div>
-<div class="detail-grid rms-details">
-<div class="detail"><h4>구조 개선</h4><ul><li>Thread/RxJava 중심 구조 → MVVM + Coroutines + Flow + Hilt로 전환.</li><li>Room·Navigation·Paging·DataStore 등 Jetpack 스택을 점진적으로 마이그레이션.</li><li>신규 화면과 작은 컴포넌트부터 Jetpack Compose 도입.</li></ul></div>
-<div class="detail"><h4>기능 개발 · 통합</h4><ul><li>mVaccine SDK 모듈화 구조를 활용해 10가지+ 보안 기능을 단일 앱에 통합.</li><li>딥페이크 탐지 AI 기능을 제품 UX에 연결해 실서비스 제공.</li><li>영상 업로드·URL 입력·탐지 결과/랭킹 등 신규 사용자 흐름 구현.</li></ul></div>
-<div class="detail"><h4>출시 · 운영</h4><ul><li>Firebase Crashlytics/Analytics 기반 품질·사용 지표 모니터링.</li><li>Play Store 정기 릴리즈와 업데이트 주기 관리.</li><li>사용자 피드백을 반영하는 개선 사이클 운영.</li></ul></div>
-</div>
+<div class="chips"><span class="chip">Kotlin</span><span class="chip">Coroutines/Flow</span><span class="chip">Hilt</span><span class="chip">Compose</span><span class="chip">Room</span></div>
 <div class="links"><a class="link" href="https://play.google.com/store/apps/details?id=com.raonsecure.mobile.security" target="_blank">Google Play ↗</a></div>
 </div>
 <div class="shots shots-uniform"><img alt="라온 모바일 시큐리티 홈" src="images/raon_mobile_security.jpg"/><img alt="딥페이크 탐지 랭킹" src="images/raon_mobile_security_rank.jpg"/><img alt="보안 검사 결과" src="images/raon_mobile_security_complete.jpg"/></div>
 </div>
 </article>
 <div class="compact-grid" style="margin-top:12px;">
-<article class="compact"><div class="tagline">Flutter · PoC</div><h3>iGuard - 자녀 모바일 관리 서비스</h3>
-<p>Android 네이티브 중심 경력 중 Flutter/Dart를 실제 사내 PoC에 적용해 부모용 자녀 모바일 관리 앱을 개발했다. (2022.06 ~ 2022.11)</p>
-<ul>
-<li>앱 사용 제어·상태별 허용 앱 설정·Google Maps 기반 위치 조회 등 부모용 관리 흐름 구현.</li>
-<li>사용 시간·앱 차단·스크린샷·블랙박스 기능을 포함한 UI를 Flutter로 개발.</li>
-</ul>
+<article class="compact"><div class="tagline">Flutter · PoC · 2022</div><h3>iGuard - 자녀 모바일 관리 서비스</h3>
+<p><b>앱 허용 · 사용 시간 · 위치 조회</b> 기능을 Flutter/Dart로 구현한 사내 PoC.</p>
 <div class="chips"><span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Google Maps</span></div>
 <div class="shots" style="margin-top:14px;"><img alt="iGuard 자녀 상태·관리 기능 홈" src="images/iguard_home.png"/><img alt="상태별 허용 앱 설정" src="images/iguard_apps.png"/><img alt="지도 기반 위치 조회" src="images/iguard_location.png"/></div>
 </article>
 </div>
 </div></section>
 <section id="ai"><div class="wrap">
-<div class="section-head"><div><div class="section-kicker">03 · AI Application / Deployment</div><h2>AI 제품화 경험</h2></div></div>
+<div class="section-head"><div><div class="section-kicker">03 · AI Application · Deployment</div><h2>AI 제품화 경험</h2></div></div>
 <article class="project">
-<div class="project-top"><div class="project-head"><div><div class="project-label">AI 적용 · 서비스 출시</div><h3>AI 딥페이크 탐지</h3><div class="role">앱 개발 리드 / 모델 개발 서브 · 6인 팀 · 2024.04 ~ 2024.12</div></div></div>
-<p class="summary">오픈소스 딥페이크 모델을 자체 데이터셋으로 튜닝하고 Android 서비스에 적용했다. 온디바이스 실행을 먼저 검증했지만, 실기기 측정 결과를 근거로 클라우드 비동기 구조로 전환해 실제 출시했다.</p><div class="project-stats" style="--stat-count:2"><div class="project-stat"><b>65 → 95%</b><span>내부 검증 정확도</span></div><div class="project-stat"><b>50만+</b><span>서비스 앱에 출시</span></div></div>
+<div class="project-top"><div class="project-head"><div><div class="project-label">AI Application · Deployment</div><h3>AI 딥페이크 탐지</h3><div class="role">앱 개발 리드 / 모델 개발 서브 · 6인 팀 · 2024.04 ~ 2024.12</div></div></div>
+<p class="summary">영상 속 딥페이크를 탐지하는 기능을 라온 모바일 시큐리티에 넣은 프로젝트. 실시간 온디바이스 탐지로 시작해 실기기 측정을 근거로 클라우드 비동기 구조로 바꿔 출시했다.</p><div class="project-stats" style="--stat-count:2"><div class="project-stat"><b>50만+</b><span>다운로드 앱에 출시</span></div><div class="project-stat"><b>온디바이스 → 클라우드</b><span>실기기 측정 기반 구조 전환</span></div></div>
+<div class="fact-list"><div class="fact"><b>실기기 검증 · 720p·30fps 미달</b><span>TFLite 양자화 모델을 적용해도 캡처 FPS·추론 지연 모두 실시간 기준 미충족.</span></div><div class="fact"><b>온디바이스 → 클라우드</b><span>실기기 측정값 기반 비동기 구조로 전환 결정.</span></div><div class="fact"><b>50만+ 앱 출시</b><span>영상 업로드 · URL 입력 · 결과/랭킹 흐름 구현.</span></div><div class="fact"><b>모델 개발 서브 · 65→95%</b><span>자체 데이터셋 구축·튜닝 · 동양인 탐지 정확도 개선(내부 검증셋).</span></div><div class="fact"><b>후속 SDK 설계에 반영</b><span>실기기에서 확인한 온디바이스 제약을 2026 KISA SDK 설계에 반영.</span></div></div>
 </div>
-<div class="project-body"><div class="detail-grid"><div class="detail"><h4>모델 → 제품 적용</h4><ul><li>자체 데이터셋 구축·튜닝으로 내부 검증 정확도 개선.</li><li>Android에서 TFLite 양자화 모델을 직접 통합하고 실시간 처리 가능성을 검증.</li><li>50만+ 다운로드 서비스 앱의 사용자 흐름과 결과 UI까지 연결해 서비스 출시.</li></ul></div><div class="detail"><h4>실기기 검증 · 아키텍처 결정</h4><ul><li>MediaProjection 프레임 캡처의 720p·30fps 미달 제약 확인.</li><li>추론 지연이 실시간 임계를 넘는 것을 단말에서 측정.</li><li>측정 데이터를 근거로 팀과 합의해 클라우드 비동기 아키텍처로 전환.</li></ul></div></div><div class="chips"><span class="chip">Android</span><span class="chip">PyTorch</span><span class="chip">TFLite</span><span class="chip">I3D</span></div></div>
+<div class="project-body">
+<div class="chips"><span class="chip">Android</span><span class="chip">PyTorch</span><span class="chip">TFLite</span><span class="chip">I3D</span></div></div>
 </article>
 <article class="project">
-<div class="project-top"><div class="project-head"><div><div class="project-label">On-device AI · SDK</div><h3>KISA 온디바이스 딥페이크 탐지 SDK 과제</h3><div class="role">SDK 설계·개발 메인 / 모델 경량화 서브 · 2026.04 ~ 현재</div></div></div>
-<p class="summary">서버 없이 Android/iOS 단말에서 딥페이크를 탐지하는 SDK. AI 딥페이크 탐지(2024)의 후속으로 3사가 공동 수행하는 KISA 과제이며, SDK 개발과 탐지 모델을 라온시큐어가 담당한다. 모델 교체가 SDK 릴리즈에 종속되지 않도록 구조를 분리했다. Android/iOS와 서로 다른 하드웨어에서도 동일한 모델 동작을 재현할 수 있도록 SDK를 설계하고 있다.</p><div class="project-stats" style="--stat-count:2"><div class="project-stat"><b>Android + iOS</b><span>Cross-platform SDK</span></div><div class="project-stat"><b>≤ 1e-5</b><span>플랫폼 간 기준 출력 재현 오차</span></div></div>
-<div></div>
+<div class="project-top"><div class="project-head"><div><div class="project-label">크로스플랫폼 SDK · 온디바이스 AI</div><h3>KISA 온디바이스 딥페이크 탐지 SDK 과제</h3><div class="role">SDK 설계·개발 메인 / 모델 경량화 서브 · 3사 협업 · 2026.04 ~ 현재 · 2026.10 (예정)</div></div></div>
+<p class="summary">서버 없이 Android/iOS 단말에서 딥페이크를 탐지하는 SDK. C++ 공통 코어를 기반으로 모델 배포·단말 호환·출력 검증·멀티모달 전처리까지 설계·개발하고 있다.</p>
+<div class="project-stats" style="--stat-count:4"><div class="project-stat"><b>Android + iOS</b><span>C++ 공통 코어</span></div><div class="project-stat"><b>SDK 재배포 없이</b><span>모델 교체·배포</span></div><div class="project-stat"><b>14.8초 → 0.3초</b><span>모델 최초 설치 최적화</span></div><div class="project-stat"><b>≤ 1e-5</b><span>협력사 기준 출력 재현 오차</span></div></div>
+<div class="fact-list">
+<div class="fact"><b>Android + iOS · C++ 공통 코어</b><span>탐지 · 전처리 · 후처리 공통화 · Kotlin/Swift는 플랫폼 인터페이스로 분리.</span></div>
+<div class="fact"><b>SDK 재배포 없이 · 모델 교체</b><span>model + config + golden I/O 분리 · 암호화·서명 검증 · 교체 실패 시 자동 롤백.</span></div>
+<div class="fact"><b>모델 최초 설치 · 중복 복호화 제거</b><span>설치 전 검증과 실제 적재 과정에서 중복되던 복호화를 제거하고, OTA 모델 검증은 유지.</span></div>
+<div class="fact"><b>모델 단위 API</b><span>모델별 독립 인스턴스 · 전/후처리 주입 · 업데이트 시점은 앱에서 제어.</span></div>
+<div class="fact"><b>NNAPI → XNNPACK · ARM32 SIGBUS 해결</b><span>ORT 그래프 최적화 원인 추적 → 문제 최적화 단계만 비활성화.</span></div>
+<div class="fact"><b>출력 검증 · 257+52</b><span>협력사 기준 출력 ≤1e-5 · C++ 회귀 257건 · 실단말 계측 52건.</span></div>
 </div>
-<div class="project-body"><div class="detail-grid">
-<div class="detail"><h4>SDK 설계</h4><ul><li>Kotlin/Swift 인터페이스 – C++ 공유 코어 – 추론 백엔드(HAL) 3계층.</li><li>Android/iOS가 동일한 C++ 탐지 로직을 사용하도록 플랫폼별 코드와 공통 코어를 분리.</li><li>model_config에 전처리·입출력·런타임 설정을 정의해 모델·config·golden I/O 3개 파일만으로 SDK 코드 수정 없이 모델을 교체.</li></ul></div>
-<div class="detail"><h4>추론 런타임 · 가속</h4><ul><li>NNAPI/CoreML 가속 우선 + CPU(XNNPACK) fallback 구조.</li><li>특정 단말에서 NNAPI 드라이버 문제를 확인해 ONNX Runtime 단일 구조 대신 여러 런타임을 선택할 수 있도록 확장.</li><li>ONNX Runtime/TFLite/CoreML 중 단말·모델 특성에 맞는 런타임을 선택할 수 있도록 설계.</li></ul></div>
-<div class="detail"><h4>크로스플랫폼 정합</h4><ul><li>ML Kit/Vision 얼굴 검출 차이로 동일 영상의 점수가 달라지는 문제 확인.</li><li>crop 기하 보정으로 모델팀 기준 출력을 1e-5 이내 오차로 재현.</li><li>검출기는 자체 경량 MTCNN C++ 공유 구조로 통일하는 방향 설계.</li></ul></div>
-<div class="detail"><h4>성능 측정 · 배포 안정성</h4><ul><li>추론 지연·FPS·메모리·콜드 스타트·배터리 사용량을 측정하고 출력 회귀 테스트를 구성.</li><li>AES-256-GCM 암호화 배포, 메모리 내 복호화, 모델 서명 검증.</li><li>A/B slot 기반 OTA와 실패 시 이전 모델로 되돌리는 구조.</li><li>모델 경량화(서브) — 양자화·프루닝·지식증류를 온디바이스 지연·메모리 제약에 맞춰 실험.</li></ul></div>
-</div><div class="chips"><span class="chip">C++</span><span class="chip">ONNX Runtime</span><span class="chip">NNAPI</span><span class="chip">CoreML</span><span class="chip">CMake</span></div></div>
+</div>
+<div class="project-body">
+<div class="tech tech-always"><div class="tech-title">기술 상세</div>
+<div class="detail-grid">
+<div class="detail"><h4>SDK · 추론 구조</h4><ul><li>Kotlin/Swift 인터페이스 → C++ 공통 코어 → ONNX Runtime 추론 백엔드.</li></ul></div>
+<div class="detail"><h4>모델 배포 · 무결성</h4><ul><li>model_config에 전처리·입출력 설정을 정의하고 model + config + golden I/O 단위로 교체.</li><li>mVaccine 서명 검증 구조를 계승해 AES-256-GCM 암호화 + RSA-PSS 서명 검증을 적용하고, 샘플링 해싱 대신 전체 SHA-256 검증 후 스테이징 교체 · 실패 시 자동 롤백.</li></ul></div>
+<div class="detail"><h4>단말 · 런타임 호환성</h4><ul><li>Execution Provider 우선순위를 config로 분리해 모델·단말 조건에 따라 NNAPI/XNNPACK fallback을 제어.</li><li>armeabi-v7a·x86 32bit ABI 지원. ARM32 SIGBUS를 ORT 그래프 최적화 문제로 추적해 32비트에서 문제 최적화만 비활성화하고 64비트 최적화는 유지.</li></ul></div>
+<div class="detail"><h4>출력 검증 · 멀티모달</h4><ul><li>협력사와 결과가 다른 구간은 원본 코드 재현과 입력 소스 교체로 오디오 디코딩 조건까지 원인을 좁힘.</li><li>오디오·비주얼 전처리를 C++ 공통 코어로 이식하고 정합성 검증: 멜 상대오차 1e-4, 컬러맵 바이트 일치.</li><li>얼굴 검출기 경량화 결과를 공통 검출기에 반영.</li></ul></div>
+</div>
+</div>
+<div class="chips"><span class="chip">Kotlin</span><span class="chip">Swift</span><span class="chip">C++</span><span class="chip">NDK/JNI</span><span class="chip">ONNX Runtime</span><span class="chip">NNAPI</span><span class="chip">XNNPACK</span><span class="chip">CoreML</span><span class="chip">CMake</span></div></div>
 </article>
 </div></section>
 <section id="other"><div class="wrap">
 <div class="section-head"><div><div class="section-kicker">Other Projects</div><h2>기타 프로젝트</h2></div></div>
 <div class="compact-grid">
-<article class="compact"><div class="tagline">AI Agent · Production</div><h3>보안 동향 보고서 AI 에이전트</h3><div class="inline-badges"><span class="badge">200+ 기업 대상</span><span class="badge">사내 실운영</span></div><p>보안 동향 보고서 생성을 LangGraph+n8n 멀티스텝 에이전트로 자동화했다.</p><ul><li>리서치 → 작성 → 검증 → 보정 흐름을 분리.</li><li>생성–검증–조건부 재시도로 품질 편차 제어.</li></ul></article>
-<article class="compact"><div class="tagline">ML · MLOps</div><h3>AI 악성앱 탐지</h3><p>시그니처 탐지가 놓치는 변종·제로데이를 보조하기 위한 ML 기반 탐지 구조를 개발하고 있다. (개발 리드, 2026.02 ~ 현재)</p><div class="project-stats" style="--stat-count:2"><div class="project-stat"><b>13.4만</b><span>기준선 학습 데이터</span></div><div class="project-stat"><b>0.83–0.88</b><span>Holdout F1</span></div></div><ul><li>수집 시점 기준 temporal split(TESSERACT)과 GNN 계열 모델을 실험.</li><li>MLflow·FastAPI·Docker·GitHub Actions 기반 기본 학습·서빙 파이프라인 구성.</li></ul><div class="chips"><span class="chip">PyTorch</span><span class="chip">MLflow</span><span class="chip">Docker</span></div></article>
-<article class="compact"><div class="tagline">AI 적용 · On-device</div><h3>AI 보이스피싱 탐지</h3><p>STT 텍스트 스트림을 KoBERT/경량 LLM으로 실시간 분석하는 3인 팀 프로젝트를 리드했다. (2025.09 ~ 2025.12)</p><div class="project-stats" style="--stat-count:3"><div class="project-stat"><b>351 → 89MB</b><span>INT8 · Recall 손실 없음</span></div><div class="project-stat"><b>0.39s</b><span>Android 실기기 추론</span></div><div class="project-stat"><b>FP 22%</b><span>분석 후 출시 보류</span></div></div><ul><li>Recall 99.34%를 데이터 불균형 기반 과적합 시그널로 분석하고, FP 22%를 근거로 출시 보류를 결정.</li><li>합성 데이터 보강, 경량 LLM 양자화·지식증류, Hard Negative Mining 후속안 제안.</li></ul><div class="chips"><span class="chip">KoBERT</span><span class="chip">INT8</span><span class="chip">Android</span></div></article>
-</div>
+<article class="compact"><div class="tagline">ML · MLOps</div><h3>AI 악성앱 탐지</h3><p>시그니처 탐지를 보완하는 ML 기반 악성앱 탐지 · 개발 리드 · 2026.02 ~ 현재.</p><div class="project-stats" style="--stat-count:2"><div class="project-stat"><b>0.83–0.88</b><span>시간 기준 Holdout F1 · 랜덤 분할 0.925 재평가</span></div><div class="project-stat"><b>13.4만</b><span>자체 수집 학습 데이터</span></div></div><ul><li><b>데이터셋 · 13.4만</b> · 자체 수집 · DexRay 베이스라인.</li><li><b>평가 · 시간 기준 Holdout</b> · 랜덤 분할 F1 0.925의 성능 과대평가 확인 → 시간 기준 F1 0.83–0.88.</li><li><b>MLOps</b> · MLflow · FastAPI · Docker · GitHub Actions.</li></ul><div class="chips"><span class="chip">PyTorch</span><span class="chip">MLflow</span><span class="chip">Docker</span></div></article><article class="compact"><div class="tagline">Android · STT/NLP</div><h3>AI 보이스피싱 탐지</h3><p>통화 음성→STT→KoBERT 실시간 분석 · 개발 리드(3인 팀) · 2025.09 ~ 2025.12.</p><div class="project-stats" style="--stat-count:3"><div class="project-stat"><b>351 → 89MB</b><span>KoBERT INT8 · Recall 유지</span></div><div class="project-stat"><b>0.39s</b><span>Android 실기기 추론</span></div><div class="project-stat"><b>Recall 99.34% · FP 22%</b><span>제품 기준 미충족 · 출시 보류</span></div></div><ul><li><b>제품 판단</b> · Recall 99.34%에도 정상 통화 FP 22% → 제품 기준 미충족으로 출시 보류 제안.</li></ul><div class="chips"><span class="chip">KoBERT</span><span class="chip">INT8</span><span class="chip">Android</span></div></article><article class="compact"><div class="tagline">AI Agent · 사내 운영</div><h3>보안 동향 보고서 AI 에이전트</h3><div class="inline-badges"><span class="badge">수작업 2~3일 → 자동화</span><span class="badge">사내 운영</span></div><p>200+ 기업 대상 월간 보고서 · 기존 수작업 2~3일 → 리서치 · 작성 · 검증 · 수정 단계 자동화. 1인 설계·개발, 사내 운영 중. (2026.02 ~)</p><ul><li><b>재처리</b> · 검증 실패 건만 재처리하는 조건 분기.</li></ul><div class="chips"><span class="chip">LangGraph</span><span class="chip">n8n</span><span class="chip">Python</span></div></article></div>
 </div></section>
 <section id="side"><div class="wrap">
 <div class="section-head"><div><div class="section-kicker">Side Projects</div><h2>개인 프로젝트</h2></div></div>
 <div class="side-grid">
-<article class="side featured-side"><div class="side-layout"><div><div class="tagline">Android · On-device AI</div><h3>셀카픽</h3><p>사진첩의 셀카를 ML Kit Face Detection으로 분석해 유사 셀카를 그룹핑하고 베스트샷을 추천하는 Android 앱. 1인 기획·설계·개발·배포, Google Play 운영 중.</p><ul><li>ML Kit 기반 유사도 점수 산출 로직 및 임계값별 정확도–오탐률 튜닝.</li><li>Kotlin · Coroutines · Jetpack Compose · MVVM · 멀티모듈 구조.</li><li>AdMob 연동, Play Store 출시 및 업데이트 운영.</li></ul><div class="chips"><span class="chip">Kotlin</span><span class="chip">Compose</span><span class="chip">ML Kit</span><span class="chip">AdMob</span></div><div class="links"><a class="link" href="https://play.google.com/store/apps/details?id=com.yjcho.aiphotocleaner" target="_blank">Google Play ↗</a></div></div><div class="shots"><img alt="셀카픽 메인" src="images/selcapic.png"/><img alt="셀카픽 베스트샷" src="images/selcapic_bestshot.png"/><img alt="셀카픽 결과" src="images/selcapic_result.png"/></div></div></article>
-<article class="side"><div class="tagline">AI Agent · OSS</div><h3>nworks</h3><p>NAVER WORKS Mail/Calendar/Message API를 MCP 도구로 래핑한 CLI &amp; 서버.</p><ul><li>Service Account와 User OAuth 인증 구조 분리.</li><li>awesome-mcp-servers 등재, Glama AAA, EN/KO/JA README, npm 배포.</li></ul><div class="links"><a class="link" href="https://github.com/yjcho9317/nworks" target="_blank">GitHub ↗</a><a class="link" href="https://www.npmjs.com/package/nworks" target="_blank">npm ↗</a></div></article>
-<article class="side"><div class="tagline">AI Security · OSS</div><h3>mcp-fence</h3><p>nworks를 개발하며 확인한 MCP 도구 호출 보호 필요성에서 출발한 양방향 보호 프록시. 프롬프트 인젝션·시크릿 유출·도구 변조를 탐지한다.</p><ul><li>SHA-256 tool description pinning, policy engine, argument validation, SQLite audit log.</li><li>56개 패턴 · 1,426개 테스트 · 자체 측정 86% 탐지율 · OWASP MCP Top 10 9개 항목 커버.</li></ul><div class="links"><a class="link" href="https://github.com/yjcho9317/mcp-fence" target="_blank">GitHub ↗</a><a class="link" href="https://www.npmjs.com/package/mcp-fence" target="_blank">npm ↗</a></div></article>
+<article class="side featured-side"><div class="side-layout"><div><div class="tagline">Android · 온디바이스 AI</div><h3>셀카픽</h3><p>사진첩의 셀카를 ML Kit Face Detection으로 분석해 유사 셀카를 그룹핑하고 베스트샷을 추천하는 Android 앱. 1인 기획·설계·개발·배포, Google Play 운영 중.</p><ul><li><b>온디바이스 AI</b> · ML Kit 기반 유사 셀카 그룹핑·베스트샷 추천, 임계값별 정확도–오탐률 측정.</li><li><b>1인 개발·운영</b> · Kotlin/Compose · 멀티모듈 · AdMob · Play Store 배포/업데이트.</li></ul><div class="chips"><span class="chip">Kotlin</span><span class="chip">Compose</span><span class="chip">ML Kit</span><span class="chip">AdMob</span></div><div class="links"><a class="link" href="https://play.google.com/store/apps/details?id=com.yjcho.aiphotocleaner" target="_blank">Google Play ↗</a></div></div><div class="shots"><img alt="셀카픽 메인" src="images/selcapic.png"/><img alt="셀카픽 베스트샷" src="images/selcapic_bestshot.png"/><img alt="셀카픽 결과" src="images/selcapic_result.png"/></div></div></article>
+<article class="side"><div class="tagline">AI Agent · 오픈소스</div><h3>nworks</h3><p>NAVER WORKS Mail/Calendar/Message API를 AI 에이전트가 호출할 수 있도록 MCP 도구로 래핑한 CLI/서버. 1인 설계·개발 후 npm에 배포했다.</p><ul><li><b>MCP 연동</b> · NAVER WORKS Mail/Calendar/Message API를 AI 에이전트용 도구로 제공.</li><li><b>인증 구조</b> · Service Account / User OAuth 분리.</li><li><b>오픈소스</b> · npm 배포, awesome-mcp-servers 등재.</li></ul><div class="links"><a class="link" href="https://github.com/yjcho9317/nworks" target="_blank">GitHub ↗</a><a class="link" href="https://www.npmjs.com/package/nworks" target="_blank">npm ↗</a></div></article>
+<article class="side"><div class="tagline">AI Security · 오픈소스</div><h3>mcp-fence</h3><p>nworks를 개발하면서 MCP 도구 호출을 별도로 보호할 필요가 있다고 판단해 만든 양방향 프록시. 프롬프트 인젝션·시크릿 유출·도구 변조를 정책과 검증 로직으로 차단한다.</p><ul><li><b>보호 기능</b> · tool description SHA-256 해시 고정, allow/deny 정책, 인자 검증, SQLite 감사 로그.</li><li><b>대응 범위</b> · 56개 탐지 패턴, OWASP MCP Top 10 중 9개 항목 대응.</li></ul><div class="links"><a class="link" href="https://github.com/yjcho9317/mcp-fence" target="_blank">GitHub ↗</a><a class="link" href="https://www.npmjs.com/package/mcp-fence" target="_blank">npm ↗</a></div></article>
 </div>
 </div></section>
 </main>
