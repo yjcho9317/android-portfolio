@@ -24,12 +24,12 @@
 
 ## 기술 스택
 
-- **Android SDK · Platform** — Android SDK · Kotlin · Java · NDK/JNI · C/C++ · AIDL/IPC · Public API 설계·하위 호환 · AAR · ProGuard/R8 · OEM 호환성 · 멀티모듈 · WorkManager · CMake
-- **Android Application** — Coroutines/Flow · Hilt · Jetpack Compose · Room · Retrofit · ML Kit · Firebase Crashlytics/Analytics
+- **Android SDK · Platform** — Android SDK · Kotlin · Java · NDK/JNI · C/C++ · AIDL/IPC · Public API 설계·하위 호환 · ProGuard/R8 · OEM 호환성 · 멀티모듈 · WorkManager · CMake · Gradle
+- **Android Application** — MVVM · Coroutines/Flow · Hilt · Jetpack Compose · Room · Retrofit · ML Kit · Firebase Crashlytics/Analytics
 - **iOS SDK** — Swift · Objective-C
-- **AI Application · Deployment** — ONNX Runtime · NNAPI · XNNPACK · TFLite · CoreML · 양자화
+- **AI Application · Deployment** — ONNX Runtime · NNAPI · XNNPACK · TFLite · CoreML · 모델 경량화(양자화·지식 증류)
 - **ML · MLOps** — Python · PyTorch · MLflow · FastAPI · Docker
-- **AI Agent · MCP** — LangGraph · n8n · MCP · TypeScript · OAuth
+- **AI Agent · MCP** — LangGraph · n8n · MCP · TypeScript
 - **테스트 · CI/CD** — JUnit · GoogleTest · Jenkins · GitHub Actions
 
 ---
@@ -64,7 +64,7 @@
   - **멀티모듈 · Java→Kotlin** — `core / detection / ui` 분리, API 시그니처 유지 → 모듈 단위 테스트·선택적 기능 구성. 서비스 앱의 선택적 기능 연동에 활용.
   - **업데이트 안정성** — 패턴/엔진 분리·필요 파일만 분할 업데이트 → 전체 파일 교체 최소화. 실패 시 재시도·무결성 재검증·중복 실행 방지, WorkManager + Coroutines로 백그라운드 작업 정리.
   - **JNI 메모리 릭** — 원인 추적·해결.
-  - **클라우드 전환 · 5인 앱 개발팀 리드** — 로컬 DB의 패턴 확장 한계 → 클라우드 전환. 사용량 과금 구조를 지원하고 **패턴 DB 5배+ 확장**, KISA 백신 성능 평가 인증 획득.
+  - **클라우드 전환 · 5인 앱 개발팀 리드** — 로컬 DB의 패턴 확장 한계 → 클라우드 전환. 라이선스 기반에서 사용량 과금 구조로 전환하고 **패턴 DB 5배+ 확장**, KISA 백신 성능 평가 인증 획득.
   - **iOS** — 탈옥·원격 제어·디버깅 탐지 모듈 개발, Objective-C SDK 유지보수.
 
 관련 링크: https://play.google.com/store/apps/details?id=com.TouchEn.mVaccine.webs
@@ -106,7 +106,7 @@
   - **모델 교체·배포** — `model + config + golden I/O`를 SDK와 분리 → SDK 재배포 없이 모델 교체. mVaccine 서명 검증 구조를 계승해 암호화·서명 검증을 적용하고, 샘플링 해싱 대신 전체 SHA-256 검증 후 스테이징 교체·실패 시 자동 롤백.
   - **모델 최초 설치 · 14.8초 → 0.3초** — 설치 전 검증과 실제 적재 과정에서 중복되던 복호화를 제거하고 OTA 모델 검증은 유지.
   - **모델 단위 API · 다중 모델·멀티모달** — **모델 1개 = 인스턴스 1개** 구조. 전·후처리 Builder 주입, 모델 갱신 시점은 앱에서 제어.
-  - **단말·런타임 호환성** — NNAPI 우선·XNNPACK(CPU) fallback 구성. ARM32 SIGBUS 원인을 ORT 그래프 최적화 단계까지 추적해 문제 최적화만 비활성화.
+  - **단말·런타임 호환성** — Android는 NNAPI → XNNPACK, iOS는 CoreML → CPU fallback 구성. ARM32 SIGBUS 원인을 ORT 그래프 최적화 단계까지 추적해 문제 최적화만 비활성화.
   - **출력 재현·검증** — 협력사 기준 출력을 **≤ 1e-5** 오차로 재현. C++ 회귀 테스트 **257건** + 실단말 계측 **52건** 검증.
   - **오디오·비주얼 멀티모달** — 멜 스펙트로그램·컬러맵·리샘플링·몽타주 전처리를 Python에서 C++ 공통 코어로 이식.
 
@@ -120,7 +120,7 @@
 
 #### 악성앱 탐지 AI
 - **역할·기간·기술:** 개발 리드(모델 포함) · 2026.02 ~ 2026.08 · Python · PyTorch · Drebin · APIGraph · DexRay · DetectBERT · MaMaDroid · MalScan
-- **모델 선정** — Drebin·APIGraph·DexRay를 학습 미사용 데이터로 비교 검증 후 Drebin·APIGraph 선정.
+- **모델 선정** — Drebin·APIGraph·DexRay를 비교 검증해 Drebin을 운영 모델로 확정.
 - **오탐 개선** — 2012~2017년 악성앱 1.8만 건 수집·재학습. 최신 악성앱 탐지율 **98.37%** 유지, 구형 앱 오탐률 **32.18% → 10.75%**, 신형 앱 **1.16% → 1.00%**.
 - **평가 방식** — 랜덤 분할의 성능 과대평가(F1 0.925)를 확인하고 수집 시점 기준 평가로 전환.
 
@@ -167,7 +167,7 @@
 
 **신한대학교** · 컴퓨터공학 전공 · 2015.03 ~ 2018.08 졸업 (편입, 4.22 / 4.5)
 
-**신흥대학교** · 웹프로그래밍 전공 · 2012.03 ~ 2015.02 수료
+**신흥대학교** · 웹프로그래밍 전공 · 2012.03 ~ 2015.02 수료 (3.95 / 4.5)
 
 ---
 
