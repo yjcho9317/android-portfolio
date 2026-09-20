@@ -39,9 +39,9 @@
 **라온시큐어** · AI 연구 2팀 · 책임연구원 · 2018.04 ~ 현재
 
 - KISA 온디바이스 딥페이크 탐지 SDK 과제 · SDK 설계·개발 메인 (2026.04 ~ 2026.10)
-- AI 악성앱 탐지 · 개발 리드 (2026.02 ~ 현재)
+- 악성앱 탐지 AI · 개발 리드 (2026.02 ~ 2026.08)
 - 클라우드 서비스 전환 · 앱 개발 리드 (2025.02 ~ 2025.10)
-- AI 딥페이크 탐지 · 앱 개발 리드 (2024.04 ~ 2024.12)
+- 딥페이크 탐지 AI · 앱 개발 리드 (2024.04 ~ 2024.12)
 - 라온 모바일 시큐리티 · Android 앱 개발 및 운영 (2021.07 ~ 현재)
 - TouchEn mVaccine · Android/iOS SDK 메인 개발자 (2019.04 ~ 현재)
 - TouchEn nxKey · macOS App 개발 (2019.04 ~ 2021.09)
@@ -84,7 +84,7 @@
 
 관련 링크: https://play.google.com/store/apps/details?id=com.raonsecure.mobile.security
 
-#### 3. AI 딥페이크 탐지
+#### 3. 딥페이크 탐지 AI
 
 - **역할·기간:** 앱 개발 리드 / 모델 개발 서브 · 6인 팀 · 2024.04 ~ 2024.12
 - **기술:** Android SDK · Kotlin · Python · PyTorch · TFLite · I3D · ResNet
@@ -118,13 +118,13 @@
 - **역할·기간·기술:** 1인 설계·개발 · 사내 운영 · 2026.02 ~ 현재 · LangGraph · n8n · Python
 - **200+ 기업 · 월간 보고서 · 기존 수작업 2~3일** — 리서치→작성→검증→수정을 단계별 에이전트로 자동화. 검증 실패 건만 재처리하는 분기 구성.
 
-#### AI 악성앱 탐지
-- **역할·기간·기술:** 개발 리드(모델 포함) · 2026.02 ~ 현재 · Python · PyTorch · MLflow · FastAPI · Docker · GitHub Actions · Android
-- **13.4만 건 · DexRay** — 자체 수집 데이터로 DexRay 베이스라인 구축.
-- **시간 기준 Holdout · F1 0.83~0.88** — 랜덤 분할 F1 0.925가 성능을 과대평가함을 확인하고 수집 시점 기준으로 재평가.
-- **MLOps** — MLflow 실험 추적 · FastAPI/Docker 서빙 · GitHub Actions CI.
+#### 악성앱 탐지 AI
+- **역할·기간·기술:** 개발 리드(모델 포함) · 2026.02 ~ 2026.08 · Python · PyTorch · Drebin · APIGraph · DexRay · DetectBERT · MaMaDroid · MalScan
+- **모델 선정** — Drebin·APIGraph·DexRay를 학습 미사용 데이터로 비교 검증 후 Drebin·APIGraph 선정.
+- **오탐 개선** — 2012~2017년 악성앱 1.8만 건 수집·재학습. 최신 악성앱 탐지율 **98.37%** 유지, 구형 앱 오탐률 **32.18% → 10.75%**, 신형 앱 **1.16% → 1.00%**.
+- **평가 방식** — 랜덤 분할의 성능 과대평가(F1 0.925)를 확인하고 수집 시점 기준 평가로 전환.
 
-#### AI 보이스피싱 탐지
+#### 보이스피싱 탐지 AI
 - **역할·기간·기술:** 개발 리드(모델 포함) · 3인 팀 · 2025.09 ~ 2025.12 · KoBERT · STT · INT8 · Android
 - **351MB → 89MB · 0.39s** — KoBERT INT8 양자화, Recall 손실 없이 Android 실기기 추론.
 - **Recall 99.34% / FP 22%** — 높은 Recall에도 정상 통화 오탐이 제품 기준을 충족하지 못해 출시 보류 제안.
