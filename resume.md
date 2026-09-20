@@ -1,10 +1,10 @@
-# 조영진 / Android SDK · Platform Engineer
+# 조영진 / Android · Applied AI Engineer
 
-> **9년차 Android SDK · Platform Engineer** / **200+ 기업 · 1,000만+ 사용자** 모바일 SDK 메인 개발 / **50만+ 다운로드 서비스 앱 개발·운영** / **AI 기능 출시 · 온디바이스 AI SDK 개발**
+> **9년차 Android · Applied AI Engineer** / **200+ 기업 · 1,000만+ 사용자** 모바일 SDK 메인 개발 / **50만+ 다운로드 서비스 앱 개발·운영** / **AI 기능 출시 · 온디바이스 AI SDK 개발**
 
 | | |
 |---|---|
-| **포지션** | Android SDK · Platform Engineer |
+| **포지션** | Android · Applied AI Engineer |
 | **직책** | 책임연구원 (AI 연구 2팀) |
 | **소속** | 라온시큐어 (RaonSecure), 2018.04 ~ 현재 |
 | **포트폴리오** | https://yjcho9317.github.io/android-portfolio |
@@ -18,7 +18,7 @@
 
 - **Android SDK · Platform** — **200+ 기업 / 1,000만+ 사용자** 모바일 SDK 메인 개발. Android 5~16 · OEM 4사 · Public API 하위 호환 · NDK/JNI · 고객사 연동. Java→Kotlin·멀티모듈 점진 전환, 고객사 코드 수정 없이 업데이트.
 - **Android App** — **50만+ 다운로드 / 평점 4.5 서비스 앱**. 구조 전환 · 신규 기능 · AI 기능 출시 · Play Store 운영.
-- **AI Application · Deployment** — **50만+ 다운로드 앱에 AI 기능 출시**. 현재 Android/iOS 공통 온디바이스 AI SDK 설계·개발 메인.
+- **AI Application · Deployment** — **50만+ 다운로드 앱에 AI 기능 출시**. Android/iOS 공통 온디바이스 AI SDK 설계·개발 메인.
 
 ---
 
@@ -38,7 +38,7 @@
 
 **라온시큐어** · AI 연구 2팀 · 책임연구원 · 2018.04 ~ 현재
 
-- KISA 온디바이스 딥페이크 탐지 SDK 과제 · SDK 설계·개발 메인 · 2026.04 ~ 현재 · 2026.10 (예정)
+- KISA 온디바이스 딥페이크 탐지 SDK 과제 · SDK 설계·개발 메인 (2026.04 ~ 2026.10)
 - AI 악성앱 탐지 · 개발 리드 (2026.02 ~ 현재)
 - 클라우드 서비스 전환 · 앱 개발 리드 (2025.02 ~ 2025.10)
 - AI 딥페이크 탐지 · 앱 개발 리드 (2024.04 ~ 2024.12)
@@ -98,7 +98,7 @@
 
 #### 4. KISA 온디바이스 딥페이크 탐지 SDK 과제
 
-- **역할·기간:** SDK 설계·개발 메인 / 모델 경량화 서브 · 3사 협업 · 2026.04 ~ 현재 · 2026.10 (예정)
+- **역할·기간:** SDK 설계·개발 메인 / 모델 경량화 서브 · 3사 협업 · 2026.04 ~ 2026.10
 - **기술:** Kotlin · Swift · C++ · NDK/JNI · ONNX Runtime · NNAPI · XNNPACK · CoreML · CMake
 - **개요:** 서버 없이 Android/iOS 단말에서 딥페이크를 탐지하는 SDK. **C++ 공통 코어, SDK와 분리된 모델 배포, 단말·런타임 호환성, 출력 재현성**을 중심으로 설계·개발.
 - **주요 경험:**
